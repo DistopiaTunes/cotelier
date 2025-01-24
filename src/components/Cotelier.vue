@@ -222,7 +222,7 @@ onUnmounted(() => {
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(1)">
                             <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b" alt="Evento Workshop" class="w-full h-full object-cover">
-                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                            <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
                                 <h3 class="font-cormorant text-white text-3xl">Workshop de Pintura</h3>
                                 <p class="font-cormorant text-white/90 text-xl mt-2">Explorando técnicas impressionistas</p>
                             </div>
@@ -232,7 +232,7 @@ onUnmounted(() => {
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(2)">
                             <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f" alt="Exposição" class="w-full h-full object-cover">
-                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                            <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
                                 <h3 class="font-cormorant text-white text-3xl">Exposição Coletiva</h3>
                                 <p class="font-cormorant text-white/90 text-xl mt-2">Alunos artistas apresentam suas obras</p>
                             </div>
@@ -242,7 +242,7 @@ onUnmounted(() => {
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(3)">
                             <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754" alt="Aula Aberta" class="w-full h-full object-cover">
-                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
+                            <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
                                 <h3 class="font-cormorant text-white text-3xl">Sábado Cultural</h3>
                                 <p class="font-cormorant text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
                             </div>
