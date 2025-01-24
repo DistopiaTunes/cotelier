@@ -22,7 +22,7 @@ const currentTeacher = ref(null);
 const teachers = {
     1: {
         name: 'Márcia Espíndola',
-        role: 'Idealizadora do Cotelier e Professora de Pintura',
+        role: 'Idealizadora do Cotelier, Artista e Professora de Pintura',
         bio: 'Com mais de 20 anos de experiência, Márcia especializa-se em técnicas clássicas de pintura a óleo. Com abordagem acessível e inclusiva...',
         fullBio: 'Com mais de 20 anos de experiência, Márcia especializa-se em técnicas clássicas de pintura a óleo. Com abordagem acessível e inclusiva, Márcia busca inspirar e capacitar artistas de todos os níveis e idades.',
         image: 'https://images.unsplash.com/photo-1444464666168-49d633b86797',
@@ -291,7 +291,7 @@ onUnmounted(() => {
     <!-- Teachers Section -->
     <section class="py-20 px-4 md:px-8 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h2 class="font-playfair text-4xl md:text-5xl text-center mb-16 text-stone-800">Conheça nossos Professores</h2>
+            <h2 class="font-playfair text-4xl md:text-5xl text-center mb-16 text-stone-800">Conheça nossa equipe</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div v-for="(teacher, id) in teachers" :key="id" class="text-center">
                     <img :src="teacher.image" :alt="teacher.name" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover hover:opacity-90 transition-opacity">
@@ -337,9 +337,9 @@ onUnmounted(() => {
             <h2 class="font-playfair text-4xl md:text-5xl text-center mb-16 text-stone-800">Horários de Aulas</h2>
             <div class="space-y-8">
                 <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <div class="flex items-center gap-3 mb-4">
+                    <div class="flex items-center justify-between mb-4">
                         <h3 class="font-playfair text-2xl text-stone-800">Pintura a Óleo para iniciantes</h3>
-                        <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-1">
                             <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
@@ -359,9 +359,9 @@ onUnmounted(() => {
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <div class="flex items-center gap-3 mb-4">
+                    <div class="flex items-center justify-between mb-4">
                         <h3 class="font-playfair text-2xl text-stone-800">Desenho para Jovens e Adultos</h3>
-                        <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-1">
                             <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
@@ -381,9 +381,9 @@ onUnmounted(() => {
                 </div>
 
                 <div class="bg-white p-8 rounded-lg shadow-sm">
-                    <div class="flex items-center gap-3 mb-4">
+                    <div class="flex items-center justify-between mb-4">
                         <h3 class="font-playfair text-2xl text-stone-800">Ateliê Multidisciplinar</h3>
-                        <div class="flex items-center gap-2">
+                        <div class="flex items-center gap-1">
                             <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
