@@ -188,20 +188,24 @@ onUnmounted(() => {
     <header class="min-h-screen relative flex items-center justify-center">
         <div class="absolute inset-0 bg-[url('/src/assets/img/bg.jpg')] bg-cover bg-center opacity-50"></div>
         <div class="relative z-10 text-center px-4 bg-white/45 backdrop-blur-sm rounded-lg p-8">
-            <h1 class="font-playfair text-7xl md:text-9xl text-stone-900 mb-4 [text-shadow:_0_10_20px_rgb(255,255,255)]">Cotelier</h1>
-            <p class="font-cormorant text-xl md:text-2xl text-stone-700 [text-shadow:_0_0_35px_rgb(255,255,255)]">Espaço Artístico Colaborativo </p>
+            <h1 class="font-lora text-7xl md:text-9xl text-stone-900 mb-4 [text-shadow:_0_10_20px_rgb(255,255,255)]">Cotelier</h1>
+            <p class="font-lora text-xl md:text-2xl text-stone-700 [text-shadow:_0_0_35px_rgb(255,255,255)]">Espaço Artístico Colaborativo </p>
         </div>
     </header>
+
+    
 
     <!-- About Section -->
     <section class="bg-stone-100 py-20 px-4 md:px-8">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="font-playfair text-4xl md:text-5xl mb-8 text-stone-800">Colaborativo e coletivo</h2>
-            <p class="font-cormorant text-xl md:text-2xl text-stone-600 leading-relaxed">
+            <h2 class="font-lora text-4xl md:text-5xl mb-8 text-stone-800">Colaborativo e coletivo</h2>
+
+
+            <p class="font-lora text-xl md:text-1 text-stone-600 leading-relaxed">
                 Aqui, no Cotelier, oferecemos um espaço acolhedor e inspirador para todos que desejam criar algo belo. Somos um verdadeiro santuário para a expressão artística, onde a criatividade flui livremente e obras de arte ganham vida. 
             </p>
 
-            <p class="font-cormorant text-xl md:text-2xl text-stone-600 leading-relaxed"> Nosso ambiente é ideal tanto para artistas consagrados quanto para aqueles que estão começando, proporcionando um espaço para explorar sua paixão e expandir os limites de suas técnicas.
+            <p class="font-playfair text-xl md:text-l text-stone-600 leading-relaxed"> Nosso ambiente é ideal tanto para artistas consagrados quanto para aqueles que estão começando, proporcionando um espaço para explorar sua paixão e expandir os limites de suas técnicas.
             </p>
                 <p class="font-cormorant text-xl md:text-2xl text-stone-600 leading-relaxed">
                 Acreditamos no poder transformador da arte, capaz de conectar pessoas e mudar realidades. Por isso, cultivamos um ambiente que inspira e motiva cada artista a desenvolver seu potencial criativo ao máximo.
@@ -469,4 +473,5 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
 <style>
 .font-playfair { font-family: 'Playfair Display', serif; }
 .font-cormorant { font-family: 'Cormorant Garamond', serif; }
+.font-lora { font-family: 'Lora', serif; }
 </style>

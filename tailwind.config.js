@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'cormorant-garamond': ['Cormorant Garamond', 'serif'],
+        'playfair-display': ['Playfair Display', 'serif'],
+        'lora': ['Lora', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
