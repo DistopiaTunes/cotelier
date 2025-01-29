@@ -19,6 +19,10 @@ const galleryScrollPosition = ref(0);
 const showBioModal = ref(false);
 const currentTeacher = ref(null);
 
+// Add these refs after the other refs
+const headerVisible = ref(false);
+const headerHeight = ref(0);
+
 const teachers = {
     1: {
         name: 'Márcia Espíndola',
@@ -165,25 +169,61 @@ const handleScroll = (event) => {
     galleryScrollPosition.value = event.target.scrollTop;
 };
 
+// Add this method after the other methods
+const checkHeaderVisibility = () => {
+    const heroSection = document.querySelector('header');
+    if (heroSection) {
+        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+        headerVisible.value = window.scrollY > heroBottom;
+    }
+};
+
+// Modify the onMounted hook
 onMounted(() => {
     slider = document.getElementById('slider');
     slides = slider?.children.length || 0;
     
     // Start auto-play
     interval = setInterval(() => moveSlide(1), 5000);
+
+    // Add scroll event listener
+    window.addEventListener('scroll', checkHeaderVisibility);
 });
 
+// Modify the onUnmounted hook
 onUnmounted(() => {
     // Clean up interval when component is destroyed
     if (interval) {
         clearInterval(interval);
     }
+    // Remove scroll event listener
+    window.removeEventListener('scroll', checkHeaderVisibility);
 });
 </script>
 
 
 <template>
 <div class="bg-stone-50">
+    <!-- Fixed Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-transform duration-300" 
+         :class="{ '-translate-y-full': !headerVisible }"
+         :style="{ transform: headerVisible ? 'translateY(0)' : 'translateY(-100%)' }">
+        <div class="bg-white/90 backdrop-blur-sm shadow-md">
+            <div class="max-w-6xl mx-auto px-4 py-4">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="font-lora text-2xl text-stone-800">Cotelier</a>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#about" class="font-lora text-stone-600 hover:text-stone-900">Sobre</a>
+                        <a href="#events" class="font-lora text-stone-600 hover:text-stone-900">Eventos</a>
+                        <a href="#teachers" class="font-lora text-stone-600 hover:text-stone-900">Professores</a>
+                        <a href="#schedule" class="font-lora text-stone-600 hover:text-stone-900">Horários</a>
+                        <a href="#contact" class="font-lora text-stone-600 hover:text-stone-900">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <header class="min-h-screen relative flex items-center justify-center">
         <div class="absolute inset-0 bg-[url('/src/assets/img/bg.jpg')] bg-cover bg-center opacity-50"></div>
@@ -196,32 +236,31 @@ onUnmounted(() => {
     
 
     <!-- About Section -->
-    <section class="bg-stone-100 py-20 px-4 md:px-8">
+    <section id="about" class="bg-stone-100 py-20 px-4 md:px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="font-lora text-4xl md:text-5xl mb-8 text-stone-800">Colaborativo e coletivo</h2>
 
 
-            <p class="font-lora text-xl md:text-1 text-stone-600 leading-relaxed">
+            <p class="font-lora text-xl md:text-1x1 text-stone-600 leading-relaxed">
                 Aqui, no Cotelier, oferecemos um espaço acolhedor e inspirador para todos que desejam criar algo belo. Somos um verdadeiro santuário para a expressão artística, onde a criatividade flui livremente e obras de arte ganham vida. 
             </p>
 
-            <p class="font-playfair text-xl md:text-l text-stone-600 leading-relaxed"> Nosso ambiente é ideal tanto para artistas consagrados quanto para aqueles que estão começando, proporcionando um espaço para explorar sua paixão e expandir os limites de suas técnicas.
+            <p class="font-lora text-xl md:text-lx1 text-stone-600 leading-relaxed"> Nosso ambiente é ideal tanto para artistas consagrados quanto para aqueles que estão começando, proporcionando um espaço para explorar sua paixão e expandir os limites de suas técnicas.
             </p>
-                <p class="font-cormorant text-xl md:text-2xl text-stone-600 leading-relaxed">
+                <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed">
                 Acreditamos no poder transformador da arte, capaz de conectar pessoas e mudar realidades. Por isso, cultivamos um ambiente que inspira e motiva cada artista a desenvolver seu potencial criativo ao máximo.
             </p>
-            <p class="font-cormorant text-xl md:text-2xl text-stone-600 leading-relaxed">
+            <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed">
                 Com mais de 10 anos de experiência, nosso atelier é um ponto de encontro colaborativo, onde artistas de todas as idades e níveis podem se conectar, aprender e crescer juntos.
-
-Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
+                Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
             </p>
         </div>
     </section>
 
 
     <!-- Events Section -->
-    <section class="py-20 px-4 md:px-8 bg-stone-100">
-        <h2 class="font-playfair text-4xl md:text-5xl text-center mb-16 text-stone-800">Eventos recentes</h2>
+    <section id="events" class="py-20 px-4 md:px-8 bg-stone-100">
+        <h2 class="font-lora text-4xl md:text-5xl text-center mb-16 text-stone-800">Eventos recentes</h2>
         
         <div class="max-w-6xl mx-auto relative">
             <!-- Slider container -->
@@ -232,8 +271,8 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(1)">
                             <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b" alt="Evento Workshop" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
-                                <h3 class="font-cormorant text-white text-3xl">Workshop de Pintura</h3>
-                                <p class="font-cormorant text-white/90 text-xl mt-2">Explorando técnicas impressionistas</p>
+                                <h3 class="font-lora text-white text-3xl">Workshop de Pintura</h3>
+                                <p class="font-lora text-white/90 text-xl mt-2">Explorando técnicas impressionistas</p>
                             </div>
                         </div>
                     </div>
@@ -242,8 +281,8 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(2)">
                             <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f" alt="Exposição" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
-                                <h3 class="font-cormorant text-white text-3xl">Exposição Coletiva</h3>
-                                <p class="font-cormorant text-white/90 text-xl mt-2">Alunos artistas apresentam suas obras</p>
+                                <h3 class="font-lora text-white text-3xl">Exposição Coletiva</h3>
+                                <p class="font-lora text-white/90 text-xl mt-2">Alunos artistas apresentam suas obras</p>
                             </div>
                         </div>
                     </div>
@@ -252,8 +291,8 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(3)">
                             <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754" alt="Aula Aberta" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
-                                <h3 class="font-cormorant text-white text-3xl">Sábado Cultural</h3>
-                                <p class="font-cormorant text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
+                                <h3 class="font-lora text-white text-3xl">Sábado Cultural</h3>
+                                <p class="font-lora text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
                             </div>
                         </div>
                     </div>
@@ -263,7 +302,7 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
                 <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center" @click="closeGallery">
                     <div class="bg-white p-6 rounded-lg max-w-4xl w-full mx-4" @click.stop>
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="font-playfair text-2xl text-stone-800">{{ galleryTitle }}</h3>
+                            <h3 class="font-lora text-2xl text-stone-800">{{ galleryTitle }}</h3>
                             <button @click="closeGallery" class="text-stone-600 hover:text-stone-800">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -298,16 +337,16 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
     </section>
 
     <!-- Teachers Section -->
-    <section class="py-20 px-4 md:px-8 bg-white">
+    <section id="teachers" class="py-20 px-4 md:px-8 bg-white">
         <div class="max-w-4xl mx-auto">
-            <h2 class="font-playfair text-4xl md:text-5xl text-center mb-16 text-stone-800">Conheça nossa equipe</h2>
+            <h2 class="font-lora text-4xl md:text-5xl text-center mb-16 text-stone-800">Conheça nossa equipe</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div v-for="(teacher, id) in teachers" :key="id" class="text-center">
                     <img :src="teacher.image" :alt="teacher.name" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover hover:opacity-90 transition-opacity">
-                    <h3 class="font-playfair text-2xl text-stone-800 mb-3">{{ teacher.name }}</h3>
-                    <p class="font-cormorant text-xl text-stone-600 mb-4">{{ teacher.role }}</p>
-                    <p class="font-cormorant text-lg text-stone-500 mb-2">{{ teacher.bio }}</p>
-                    <button @click="showTeacherBio(id)" class="text-blue-600 hover:text-blue-800 font-cormorant text-lg">Ler mais</button>
+                    <h3 class="font-lora text-2xl text-stone-800 mb-3">{{ teacher.name }}</h3>
+                    <p class="font-lora text-xl text-stone-600 mb-4">{{ teacher.role }}</p>
+                    <p class="font-lora text-lg text-stone-500 mb-2">{{ teacher.bio }}</p>
+                    <button @click="showTeacherBio(id)" class="text-blue-600 hover:text-blue-800 font-lora text-lg">Ler mais</button>
                 </div>
             </div>
         </div>
@@ -316,7 +355,7 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
         <div v-if="showBioModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center" @click="closeBioModal">
             <div class="bg-white p-8 rounded-lg max-w-2xl w-full mx-4" @click.stop>
                 <div class="flex justify-between items-center mb-6">
-                    <h3 class="font-playfair text-3xl text-stone-800">{{ currentTeacher?.name }}</h3>
+                    <h3 class="font-lora text-3xl text-stone-800">{{ currentTeacher?.name }}</h3>
                     <button @click="closeBioModal" class="text-stone-600 hover:text-stone-800">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -341,13 +380,13 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
     </section>
 
     <!-- Class Schedule Section -->
-    <section class="py-20 px-4 md:px-8 bg-stone-50">
+    <section id="schedule" class="py-20 px-4 md:px-8 bg-stone-50">
         <div class="max-w-4xl mx-auto">
-            <h2 class="font-playfair text-4xl md:text-5xl text-center mb-16 text-stone-800">Horários de Aulas</h2>
+            <h2 class="font-lora text-4xl md:text-5xl text-center mb-16 text-stone-800">Horários de Aulas</h2>
             <div class="space-y-8">
                 <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="font-playfair text-2xl text-stone-800">Pintura a Óleo para iniciantes</h3>
+                        <h3 class="font-lora text-2xl text-stone-800">Pintura a Óleo para iniciantes</h3>
                         <div class="flex items-center gap-1">
                             <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -355,8 +394,8 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-cormorant text-xl text-stone-600 mb-4">Todas as Segundas e Quartas, 10:00 - 12:00</p>
-                    <p class="font-cormorant text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais e teoria das cores.</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Todas as Segundas e Quartas, 10:00 - 12:00</p>
+                    <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais e teoria das cores.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -369,7 +408,7 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
 
                 <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="font-playfair text-2xl text-stone-800">Desenho para Jovens e Adultos</h3>
+                        <h3 class="font-lora text-2xl text-stone-800">Desenho para Jovens e Adultos</h3>
                         <div class="flex items-center gap-1">
                             <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -377,8 +416,8 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
                             <span class="text-red-500 text-sm font-medium">Indisponível</span>
                         </div>
                     </div>
-                    <p class="font-cormorant text-xl text-stone-600 mb-4">Todas as Quintas, 10:00 - 12:00</p>
-                    <p class="font-cormorant text-lg text-stone-500 mb-4">Para todos entusiastas do desenho artístico, do básico ao avançado.</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Todas as Quintas, 10:00 - 12:00</p>
+                    <p class="font-lora text-lg text-stone-500 mb-4">Para todos entusiastas do desenho artístico, do básico ao avançado.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de entrar na lista de espera do curso de Desenho para Jovens e Adultos" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -391,7 +430,7 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
 
                 <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="font-playfair text-2xl text-stone-800">Ateliê Multidisciplinar</h3>
+                        <h3 class="font-lora text-2xl text-stone-800">Ateliê Multidisciplinar</h3>
                         <div class="flex items-center gap-1">
                             <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -399,8 +438,8 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-cormorant text-xl text-stone-600 mb-4">Sábados, 09:00 - 12:00</p>
-                    <p class="font-cormorant text-lg text-stone-500 mb-4">Explore livremente entre as técnicas de pintura a óleo ou acrílica, desenho artístico e ilustração digital</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Sábados, 09:00 - 12:00</p>
+                    <p class="font-lora text-lg text-stone-500 mb-4">Explore livremente entre as técnicas de pintura a óleo ou acrílica, desenho artístico e ilustração digital</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o Ateliê Multidisciplinar" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -414,8 +453,9 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
         </div>
     </section>
 
+
     <!-- Contact Section -->
-    <section class="py-20 px-4 md:px-8">
+    <section id="contact" class="py-20 px-4 md:px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="font-playfair text-4xl md:text-5xl mb-8 text-stone-800">Venha nos visitar</h2>
             <p class="font-cormorant text-xl md:text-2xl text-stone-600 mb-8">
@@ -474,4 +514,8 @@ Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
 .font-playfair { font-family: 'Playfair Display', serif; }
 .font-cormorant { font-family: 'Cormorant Garamond', serif; }
 .font-lora { font-family: 'Lora', serif; }
+
+html {
+    scroll-behavior: smooth;
+}
 </style>

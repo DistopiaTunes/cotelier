@@ -1,9 +1,9 @@
 <script setup>
-import HelloWorld from './components/Cotelier.vue'
+import Cotelier from './components/Cotelier.vue'
 </script>
 
 <template>
-<HelloWorld />
+<Cotelier/>
 </template>
 
 <style scoped>
