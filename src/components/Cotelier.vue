@@ -11,7 +11,7 @@ const showModal = ref(false);
 const currentGallery = ref([]);
 const galleryTitle = ref('');
 const currentImageIndex = ref(0);
-
+const showFullImage = ref(false);
 // Add state for gallery scroll position
 const galleryScrollPosition = ref(0);
 
@@ -141,30 +141,19 @@ const closeGallery = () => {
 
 const openFullImage = (imageUrl, index) => {
     currentImageIndex.value = index;
-    const win = window.open('', '_blank');
-    win.document.write(`
-        <html>
-            <head>
-                <title>${galleryTitle.value}</title>
-                <style>
-                    body { margin: 0; background: black; height: 100vh; display: flex; justify-content: center; align-items: center; }
-                    img { max-width: 100%; max-height: 100vh; object-fit: contain; }
-                </style>
-            </head>
-            <body onclick="window.close()">
-                <img src="${imageUrl}" onclick="event.stopPropagation(); window.opener.postMessage('next', '*');">
-            </body>
-        </html>
-    `);
-    
-    // Listen for messages from the popup window
-    window.addEventListener('message', (event) => {
-        if (event.data === 'next') {
-            currentImageIndex.value = (currentImageIndex.value + 1) % currentGallery.value.length;
-            const nextImage = currentGallery.value[currentImageIndex.value];
-            win.document.querySelector('img').src = nextImage;
-        }
-    });
+    showFullImage.value = true;
+};
+
+const nextImage = () => {
+    currentImageIndex.value = (currentImageIndex.value + 1) % currentGallery.value.length;
+};
+
+const previousImage = () => {
+    currentImageIndex.value = (currentImageIndex.value - 1 + currentGallery.value.length) % currentGallery.value.length;
+};
+
+const closeFullImage = () => {
+    showFullImage.value = false;
 };
 
 // Track scroll position
@@ -340,14 +329,51 @@ onUnmounted(() => {
                                 </svg>
                             </button>
                         </div>
-                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 modal-content" @scroll="handleScroll">
                             <img v-for="(photo, index) in currentGallery" 
                                 :key="index"
                                 :src="photo"
                                 :alt="'Photo ' + (index + 1)"
                                 class="w-full h-48 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
-                                @click="openFullImage(photo)">
+                                @click="openFullImage(photo, index)">
                         </div>
+                    </div>
+                </div>
+
+                <!-- Full Image Modal -->
+                <div v-if="showFullImage" 
+                     class="fixed inset-0 bg-black z-[70] flex items-center justify-center"
+                     @click="closeFullImage">
+                    <div class="relative max-w-7xl w-full h-full flex items-center justify-center">
+                        <!-- Previous button -->
+                        <button @click.stop="previousImage" 
+                                class="absolute left-4 p-2 text-white hover:bg-white/10 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>
+                        </button>
+                        
+                        <!-- Image -->
+                        <img :src="currentGallery[currentImageIndex]" 
+                             :alt="'Photo ' + (currentImageIndex + 1)"
+                             class="max-h-[90vh] max-w-[90vw] object-contain"
+                             @click.stop>
+                        
+                        <!-- Next button -->
+                        <button @click.stop="nextImage" 
+                                class="absolute right-4 p-2 text-white hover:bg-white/10 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        
+                        <!-- Close button -->
+                        <button @click.stop="closeFullImage" 
+                                class="absolute top-4 right-4 p-2 text-white hover:bg-white/10 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
 
