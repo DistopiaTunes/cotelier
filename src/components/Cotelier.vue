@@ -74,8 +74,8 @@ const teachers = {
     2: {
         name: 'Raphael Francisco', 
         role: 'Artista multidisciplinar',
-        bio: 'Raphael explora constantemente novas linguagens nas artes visuais e dedica-se a compartilhar seu saber/fazer artístico com a comunidade.',
-        fullBio: 'Raphael é mestre em pintura pela UNESPAR, com mais de 10 anos de experiência na prática e ensino das artes visuais. Sua abordagem foca a exploração de diferentes técnicas e materiais, buscando sempre o equilíbrio entre as técnicas tradicionais e as práticas contemporâneas. Busca sempre a melhoria contínua e a inovação na arte. Adiciona uma perspectiva contemporânea e inovadora às suas obras, explorando a arte contemporânea e a arte digital.',
+        bio: 'Raphael explora constantemente novas linguagens nas artes visuais e dedica-se a compartilhar seu saber e experiência artística com a comunidade.',
+        fullBio: 'Raphael é mestre em pintura pela UNESPAR, com mais de 10 anos de atuação na prática e ensino das artes visuais. Sua abordagem destaca a experimentação e o domínio de diferentes técnicas e materiais, buscando conciliar fundamentos clássicos com práticas artísticas atuais. Está sempre em busca de aprimoramento e inovação, trazendo uma visão ousada e investigativa para suas obras, especialmente quando trabalha com abstração, arte digital e pesquisas em linguagens visuais emergentes.',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/raphael.jpg',
         instagram: 'https://instagram.com/raphael.ars',
         instagramLabel: '@raphael.ars'
@@ -92,7 +92,7 @@ const teachers = {
 
     4: {
         name: 'Carlos Alexandre',
-        role: 'Desenhista, Ilustrador e Professor',
+        role: 'Desenhista, Ilustrador, Caricaturista e Professor',
         bio: 'Carlos Alexandre tem sólida experiência em desenho, ilustração digital e tradicional, quadrinhos e mangás. Já ilustrou diversos livros e projetos editoriais. Domina técnicas variadas e incentiva criatividade e expressão em seus alunos.',
         fullBio: 'Carlos Alexandre atua há 10 anos nas artes visuais, com experiência em desenho, ilustração digital e tradicional, quadrinhos, além de adicionar ilustração de mangás e animes ao seu repertório artístico. Já ilustrou mais de dez livros infantis — vários publicados — além de revistas, capas, mascotes e projetos editoriais. Domina ferramentas como Photoshop e Illustrator, criando personagens, narrativas visuais e artes em diversos estilos. Também possui prática em retratos realistas, aquarela e lápis de cor. Como professor, dedica-se à formação de novos artistas, incentivando criatividade, técnica e expressão pessoal.',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/alex.jpg',
@@ -421,12 +421,14 @@ onUnmounted(() => {
                 </p>
 
                 <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify mt-4">
-                    Nosso ambiente é ideal tanto para artistas consagrados quanto para aqueles que estão começando, proporcionando um espaço para explorar sua paixão e expandir os limites de suas técnicas.
-                </p>
-                
-                <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify mt-4">
                     Acreditamos no poder transformador da arte, capaz de conectar pessoas e mudar realidades. Por isso, cultivamos um ambiente que inspira e motiva cada artista a desenvolver seu potencial criativo ao máximo.
                 </p>
+
+                <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify mt-4">
+                    Localizado no bairro Boa Vista em Curitiba, nosso ambiente é ideal tanto para artistas consagrados quanto para aqueles que estão começando sua jornada, proporcionando um espaço para explorar sua paixão e expandir os limites de suas técnicas.
+                </p>
+                
+
                 <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify mt-4">
                     Com mais de 10 anos de experiência, nosso atelier é um ponto de encontro colaborativo, onde artistas de todas as idades e níveis podem se conectar, aprender e crescer juntos.
                     Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
@@ -656,7 +658,7 @@ onUnmounted(() => {
                         </div>
                     </div>
                     <p class="font-lora text-xl text-stone-600 mb-4">Sábados, 09:00 - 12:00</p>
-                    <p class="font-lora text-lg text-stone-500 mb-4">Explore livremente entre as técnicas de pintura a óleo ou acrílica, desenho artístico, gravura e ilustração digital</p>
+                    <p class="font-lora text-lg text-stone-500 mb-4">Ideal para quem busca desenvolver sua própria linguagem artística. Explore livremente entre as técnicas de pintura a óleo ou acrílica, desenho artístico, gravura e ilustração digital</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o Ateliê Multidisciplinar" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -686,7 +688,7 @@ onUnmounted(() => {
                     <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem quer aprender a criar personagens no estilo mangá e anime.
                         Técnicas de desenho anatômico, expressões faciais, poses, narrativa visual e construção de estilo indivdual.</p>
                     <div class="flex gap-4">
-                        <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o Ateliê Multidisciplinar" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
+                        <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o Curso de Anime e Mangá" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                             </svg>
@@ -710,7 +712,7 @@ onUnmounted(() => {
                     <p class="font-lora text-lg text-stone-500 mb-4">Curso ideal para quem deseja desenvolver ilustração artística em diferentes técnicas.
                         Inclui ilustração digital, tradicional, aquarela, quadrinhos, caricatura e ilustração infantil.</p>
                     <div class="flex gap-4">
-                        <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o Ateliê Multidisciplinar" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
+                        <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o Curso de Ilustração (Digital, Tradicional e Aquarela)" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                             </svg>
