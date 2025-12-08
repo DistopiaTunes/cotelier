@@ -28,6 +28,38 @@ const mobileMenuOpen = ref(false);
 
 // Add state for workshop dialog
 const showWorkshopDialog = ref(false);
+const currentWorkshopIndex = ref(0);
+
+// Workshops data
+const workshops = [
+    {
+        title: 'Nova Oficina de Artes',
+        image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f',
+        description: 'Descubra sua criatividade em nossa nova oficina de artes! Uma experiência única para explorar diferentes técnicas e expressar sua arte.',
+        details: 'Venha participar de uma oficina especial onde você poderá experimentar diversas técnicas artísticas, desde pintura até desenho, em um ambiente acolhedor e inspirador.',
+        additionalInfo: 'Não é necessário ter experiência prévia. Todos são bem-vindos!',
+        whatsappMessage: 'Olá! Gostaria de informações sobre a Nova Oficina de Artes',
+        instagramLink: 'https://instagram.com/cotelier.oficial'
+    },
+    {
+        title: 'Oficina de Pintura em Aquarela',
+        image: 'https://images.unsplash.com/photo-1515169067868-5387ec356754',
+        description: 'Aprenda as técnicas fundamentais da pintura em aquarela com nossa oficina especializada.',
+        details: 'Nesta oficina você aprenderá desde os básicos até técnicas avançadas de aquarela, explorando cores, texturas e diferentes estilos artísticos.',
+        additionalInfo: 'Materiais inclusos. Vagas limitadas!',
+        whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
+        instagramLink: 'https://instagram.com/cotelier.oficial'
+    },
+    {
+        title: 'Workshop de Desenho Realista',
+        image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b',
+        description: 'Desenvolva suas habilidades de desenho realista com técnicas profissionais.',
+        details: 'Aprenda a criar desenhos realistas impressionantes através de técnicas de sombreamento, proporção e detalhamento.',
+        additionalInfo: 'Ideal para iniciantes e intermediários que desejam aprimorar suas técnicas.',
+        whatsappMessage: 'Olá! Gostaria de informações sobre o Workshop de Desenho Realista',
+        instagramLink: 'https://instagram.com/cotelier.oficial'
+    }
+];
 
 const teachers = {
     1: {
@@ -44,7 +76,7 @@ const teachers = {
         role: 'Artista multidisciplinar',
         bio: 'Raphael é mestre em pintura pela UNESPAR, com mais de 10 anos de experiência na prática e ensino das artes visuais. Sua abordagem foca...',
         fullBio: 'Raphael é mestre em pintura pela UNESPAR, com mais de 10 anos de experiência na prática e ensino das artes visuais. Sua abordagem foca a exploração de diferentes técnicas e materiais, buscando sempre o equilíbrio entre as técnicas tradicionais e as práticas contemporâneas. Busca sempre a melhoria contínua e a inovação na arte. Adiciona uma perspectiva contemporânea e inovadora às suas obras, explorando a arte contemporânea e a arte digital.',
-        image: 'https://images.unsplash.com/photo-1598439210625-5067c578f3f6',
+        image: '../src/assets/img/profs/raphael.jpg',
         instagram: 'https://instagram.com/raphael.ars',
         instagramLabel: '@raphael.ars'
     },
@@ -53,7 +85,7 @@ const teachers = {
         role: 'Artista plástica, tatuadora e professora',
         bio: 'Mônica Ohana é uma artista plástica, tatuadora e professora de artes visuais. Sua abordagem é contemporânea e inovadora...',
         fullBio: 'Mônica Ohana é uma artista plástica, tatuadora e professora de artes visuais. Sua abordagem é contemporânea e inovadora, buscando sempre o equilíbrio entre as técnicas tradicionais e as práticas contemporâneas.',
-        image: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308',
+        image: '../src/assets/img/profs/monica.jpg',
         instagram: 'https://instagram.com/monicatatuadora',
         instagramLabel: '@monicatatuadora'
     },
@@ -204,6 +236,19 @@ const closeWorkshopDialog = () => {
     showWorkshopDialog.value = false;
 };
 
+// Workshop navigation methods
+const nextWorkshop = () => {
+    currentWorkshopIndex.value = (currentWorkshopIndex.value + 1) % workshops.length;
+};
+
+const previousWorkshop = () => {
+    currentWorkshopIndex.value = (currentWorkshopIndex.value - 1 + workshops.length) % workshops.length;
+};
+
+const goToWorkshop = (index) => {
+    currentWorkshopIndex.value = index;
+};
+
 // Modify the onMounted hook
 onMounted(() => {
     slider = document.getElementById('slider');
@@ -217,6 +262,7 @@ onMounted(() => {
 
     // Show workshop dialog on page load
     showWorkshopDialog.value = true;
+    currentWorkshopIndex.value = 0;
 });
 
 // Modify the onUnmounted hook
@@ -243,36 +289,52 @@ onUnmounted(() => {
                 </svg>
             </button>
             
+            <!-- Navigation Buttons -->
+            <button v-if="workshops.length > 1" @click.stop="previousWorkshop" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </button>
+            <button v-if="workshops.length > 1" @click.stop="nextWorkshop" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+            
             <div class="flex flex-col md:flex-row h-full overflow-hidden">
                 <!-- Image Section -->
-                <div class="w-full md:w-1/2 h-48 md:h-full">
-                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f" alt="Nova Oficina de Artes" class="w-full h-full object-cover">
+                <div class="w-full md:w-1/2 h-48 md:h-full relative overflow-hidden">
+                    <transition name="fade" mode="out-in">
+                        <img :key="currentWorkshopIndex" :src="workshops[currentWorkshopIndex].image" :alt="workshops[currentWorkshopIndex].title" class="w-full h-full object-cover">
+                    </transition>
                 </div>
                 
                 <!-- Content Section -->
                 <div class="w-full md:w-1/2 p-6 md:p-8 flex flex-col justify-between overflow-y-auto">
-                    <div>
-                        <h2 class="font-lora text-3xl md:text-4xl text-stone-800 mb-4">Nova Oficina de Artes</h2>
-                        <p class="font-lora text-lg text-stone-600 mb-4">
-                            Descubra sua criatividade em nossa nova oficina de artes! Uma experiência única para explorar diferentes técnicas e expressar sua arte.
-                        </p>
-                        <p class="font-lora text-base text-stone-500 mb-4">
-                            Venha participar de uma oficina especial onde você poderá experimentar diversas técnicas artísticas, desde pintura até desenho, em um ambiente acolhedor e inspirador.
-                        </p>
-                        <p class="font-lora text-base text-stone-500 mb-6">
-                            Não é necessário ter experiência prévia. Todos são bem-vindos!
-                        </p>
-                    </div>
+                    <transition name="fade" mode="out-in">
+                        <div :key="currentWorkshopIndex">
+                            <h2 class="font-lora text-3xl md:text-4xl text-stone-800 mb-4">{{ workshops[currentWorkshopIndex].title }}</h2>
+                            <p class="font-lora text-lg text-stone-600 mb-4">
+                                {{ workshops[currentWorkshopIndex].description }}
+                            </p>
+                            <p class="font-lora text-base text-stone-500 mb-4">
+                                {{ workshops[currentWorkshopIndex].details }}
+                            </p>
+                            <p class="font-lora text-base text-stone-500 mb-6">
+                                {{ workshops[currentWorkshopIndex].additionalInfo }}
+                            </p>
+                        </div>
+                    </transition>
                     
                     <!-- WhatsApp and Instagram Buttons -->
                     <div class="mt-4 flex flex-nowrap gap-2">
-                        <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre a Nova Oficina de Artes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-3 py-2 rounded-lg flex items-center justify-center text-xs flex-1 min-w-0">
+                        <a :href="`https://wa.me/554130492413?text=${encodeURIComponent(workshops[currentWorkshopIndex].whatsappMessage)}`" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-3 py-2 rounded-lg flex items-center justify-center text-xs flex-1 min-w-0">
                             <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                             </svg>
                             <span class="truncate">WhatsApp</span>
                         </a>
-                        <a href="https://instagram.com/cotelier.oficial" target="_blank" class="bg-pink-600/80 hover:bg-pink-700/80 text-white px-3 py-2 rounded-lg flex items-center justify-center text-xs flex-1 min-w-0">
+                        <a :href="workshops[currentWorkshopIndex].instagramLink" target="_blank" class="bg-pink-600/80 hover:bg-pink-700/80 text-white px-3 py-2 rounded-lg flex items-center justify-center text-xs flex-1 min-w-0">
                             <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                             </svg>
@@ -280,6 +342,17 @@ onUnmounted(() => {
                         </a>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Workshop Indicators -->
+            <div v-if="workshops.length > 1" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                <button 
+                    v-for="(workshop, index) in workshops" 
+                    :key="index"
+                    @click.stop="goToWorkshop(index)"
+                    class="w-2 h-2 rounded-full transition-all"
+                    :class="currentWorkshopIndex === index ? 'bg-stone-800 w-8' : 'bg-stone-400 hover:bg-stone-600'"
+                ></button>
             </div>
         </div>
     </div>
@@ -591,6 +664,13 @@ onUnmounted(() => {
                         </a>
                     </div>
                 </div>
+
+
+<!-- Inserir novos cursos aqui -->
+
+
+
+                
             </div>
         </div>
     </section>
@@ -722,5 +802,14 @@ onUnmounted(() => {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* Workshop dialog transitions */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+    opacity: 0;
 }
 </style>
