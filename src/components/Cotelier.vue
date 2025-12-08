@@ -340,23 +340,25 @@ onUnmounted(() => {
 
     <!-- About Section -->
     <section id="about" class="bg-stone-100 py-20 px-4 md:px-8">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="font-lora text-4xl md:text-5xl mb-8 text-stone-800">Colaborativo e coletivo</h2>
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-lora text-4xl md:text-5xl text-center mb-16 text-stone-800">Colaborativo e coletivo</h2>
+            <div>
+                <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify">
+                    Aqui, no Cotelier, oferecemos um espaço acolhedor e inspirador para todos que desejam criar algo belo. Somos um verdadeiro santuário para a expressão artística, onde a criatividade flui livremente e obras de arte ganham vida. 
+                </p>
 
-
-            <p class="font-lora text-xl md:text-1x1 text-stone-600 leading-relaxed">
-                Aqui, no Cotelier, oferecemos um espaço acolhedor e inspirador para todos que desejam criar algo belo. Somos um verdadeiro santuário para a expressão artística, onde a criatividade flui livremente e obras de arte ganham vida. 
-            </p>
-
-            <p class="font-lora text-xl md:text-lx1 text-stone-600 leading-relaxed"> Nosso ambiente é ideal tanto para artistas consagrados quanto para aqueles que estão começando, proporcionando um espaço para explorar sua paixão e expandir os limites de suas técnicas.
-            </p>
-                <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed">
-                Acreditamos no poder transformador da arte, capaz de conectar pessoas e mudar realidades. Por isso, cultivamos um ambiente que inspira e motiva cada artista a desenvolver seu potencial criativo ao máximo.
-            </p>
-            <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed">
-                Com mais de 10 anos de experiência, nosso atelier é um ponto de encontro colaborativo, onde artistas de todas as idades e níveis podem se conectar, aprender e crescer juntos.
-                Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
-            </p>
+                <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify mt-4">
+                    Nosso ambiente é ideal tanto para artistas consagrados quanto para aqueles que estão começando, proporcionando um espaço para explorar sua paixão e expandir os limites de suas técnicas.
+                </p>
+                
+                <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify mt-4">
+                    Acreditamos no poder transformador da arte, capaz de conectar pessoas e mudar realidades. Por isso, cultivamos um ambiente que inspira e motiva cada artista a desenvolver seu potencial criativo ao máximo.
+                </p>
+                <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify mt-4">
+                    Com mais de 10 anos de experiência, nosso atelier é um ponto de encontro colaborativo, onde artistas de todas as idades e níveis podem se conectar, aprender e crescer juntos.
+                    Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
+                </p>
+            </div>
         </div>
     </section>
 
