@@ -95,7 +95,7 @@ const teachers = {
         role: 'Desenhista, Ilustradore Professor',
         bio: 'Carlos Alexandre tem sólida experiência em desenho, ilustração digital e tradicional, quadrinhos e mangás. Já ilustrou diversos livros e projetos editoriais. Domina técnicas variadas e incentiva criatividade e expressão em seus alunos.',
         fullBio: 'Carlos Alexandre atua há 10 anos nas artes visuais, com experiência em desenho, ilustração digital e tradicional, quadrinhos, além de adicionar ilustração de mangás e animes ao seu repertório artístico. Já ilustrou mais de dez livros infantis — vários publicados — além de revistas, capas, mascotes e projetos editoriais. Domina ferramentas como Photoshop e Illustrator, criando personagens, narrativas visuais e artes em diversos estilos. Também possui prática em retratos realistas, aquarela e lápis de cor. Como professor, dedica-se à formação de novos artistas, incentivando criatividade, técnica e expressão pessoal.',
-        image: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/alexandre.jpg',
         instagram: 'https://instagram.com/alexandrestudio182',
         instagramLabel: '@alexandrestudio182'
     },
