@@ -92,12 +92,12 @@ const teachers = {
 
     4: {
         name: 'Carlos Alexandre',
-        role: 'Desenhista, Ilustrador, caricaturista e professor',
-        bio: 'Carlos Alexandre é desenhista, ilustrador, caricaturista e professor. Atua há anos no universo das artes gráficas, desenvolvendo trabalhos originais que unem criatividade e senso de humor únicos.',
-        fullBio: 'Carlos Alexandre é desenhista, ilustrador, caricaturista e professor, com uma vasta experiência na área de artes visuais. Já participou de diversas exposições e eventos culturais, transmitindo paixão e técnica em seus trabalhos e aulas. Com um olhar atento ao cotidiano, transforma cenas comuns em ilustrações expressivas e cheias de personalidade, encantando públicos de todas as idades. Ao longo dos anos, tem se dedicado também à formação de novos artistas, incentivando a criatividade e o pensamento crítico.',
+        role: 'Desenhista, Ilustradore Professor',
+        bio: 'Carlos Alexandre tem sólida experiência em desenho, ilustração digital e tradicional, quadrinhos e mangás. Já ilustrou diversos livros e projetos editoriais. Domina técnicas variadas e incentiva criatividade e expressão em seus alunos.',
+        fullBio: 'Carlos Alexandre atua há 10 anos nas artes visuais, com experiência em desenho, ilustração digital e tradicional, quadrinhos, além de adicionar ilustração de mangás e animes ao seu repertório artístico. Já ilustrou mais de dez livros infantis — vários publicados — além de revistas, capas, mascotes e projetos editoriais. Domina ferramentas como Photoshop e Illustrator, criando personagens, narrativas visuais e artes em diversos estilos. Também possui prática em retratos realistas, aquarela e lápis de cor. Como professor, dedica-se à formação de novos artistas, incentivando criatividade, técnica e expressão pessoal.',
         image: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308',
-        instagram: 'https://instagram.com/ilustracaricaturas_',
-        instagramLabel: '@ilustracaricaturas_/'
+        instagram: 'https://instagram.com/alexandrestudio182',
+        instagramLabel: '@alexandrestudio182'
     },
 
     5: {
