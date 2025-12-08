@@ -149,9 +149,14 @@ const showGallery = (galleryId) => {
         3: {
             title: 'III Sábado Cultural - 2025',
             images: [
-                'https://images.unsplash.com/photo-1515169067868-5387ec356754',
-                'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b',
-                'https://images.unsplash.com/photo-1513364776144-60967b0f800f'          
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/01.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/02.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/03.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/04.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/05.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/06.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/07.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/08.jpeg'
             ]
         }
     };
@@ -469,7 +474,7 @@ onUnmounted(() => {
                     <!-- Slide 3 -->
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(3)">
-                            <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754" alt="Aula Aberta" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/04.jpeg" alt="III - Sábado Cultural" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
                                 <h3 class="font-lora text-white text-3xl">III  Sábado Cultural</h3>
                                 <p class="font-lora text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
