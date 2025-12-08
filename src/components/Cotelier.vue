@@ -76,7 +76,7 @@ const teachers = {
         role: 'Artista multidisciplinar',
         bio: 'Raphael é mestre em pintura pela UNESPAR, com mais de 10 anos de experiência na prática e ensino das artes visuais. Sua abordagem foca...',
         fullBio: 'Raphael é mestre em pintura pela UNESPAR, com mais de 10 anos de experiência na prática e ensino das artes visuais. Sua abordagem foca a exploração de diferentes técnicas e materiais, buscando sempre o equilíbrio entre as técnicas tradicionais e as práticas contemporâneas. Busca sempre a melhoria contínua e a inovação na arte. Adiciona uma perspectiva contemporânea e inovadora às suas obras, explorando a arte contemporânea e a arte digital.',
-        image: 'https://striocks-phiod-kriuwn.yolasite.com/ws/alt-imgs/w400/9d3441fd4dc0825375ae921c8aa14a3b.webp',
+        image: 'https://github.com/DistopiaTunes/cotelier/blob/main/src/assets/img/profs/raphael.jpg',
         instagram: 'https://instagram.com/raphael.ars',
         instagramLabel: '@raphael.ars'
     },
@@ -85,7 +85,7 @@ const teachers = {
         role: 'Artista plástica, tatuadora e professora',
         bio: 'Mônica Ohana é uma artista plástica, tatuadora e professora de artes visuais. Sua abordagem é contemporânea e inovadora...',
         fullBio: 'Mônica Ohana é uma artista plástica, tatuadora e professora de artes visuais. Sua abordagem é contemporânea e inovadora, buscando sempre o equilíbrio entre as técnicas tradicionais e as práticas contemporâneas.',
-        image: 'https://striocks-phiod-kriuwn.yolasite.com/ws/alt-imgs/w400/c16dd131b965bd3801c90ddc01ec4047.webp',
+        image: 'https://github.com/DistopiaTunes/cotelier/blob/main/src/assets/img/profs/monica.jpg',
         instagram: 'https://instagram.com/monicatatuadora',
         instagramLabel: '@monicatatuadora'
     },
