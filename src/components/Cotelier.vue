@@ -74,17 +74,17 @@ const teachers = {
     2: {
         name: 'Raphael Francisco', 
         role: 'Artista multidisciplinar',
-        bio: 'Raphael é mestre em pintura pela UNESPAR, com mais de 10 anos de experiência na prática e ensino das artes visuais. Sua abordagem foca...',
+        bio: 'Raphael explora constantemente novas linguagens nas artes visuais e dedica-se a compartilhar seu saber/fazer artístico com a comunidade.',
         fullBio: 'Raphael é mestre em pintura pela UNESPAR, com mais de 10 anos de experiência na prática e ensino das artes visuais. Sua abordagem foca a exploração de diferentes técnicas e materiais, buscando sempre o equilíbrio entre as técnicas tradicionais e as práticas contemporâneas. Busca sempre a melhoria contínua e a inovação na arte. Adiciona uma perspectiva contemporânea e inovadora às suas obras, explorando a arte contemporânea e a arte digital.',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/raphael.jpg',
         instagram: 'https://instagram.com/raphael.ars',
         instagramLabel: '@raphael.ars'
     },
     3: {
-        name: 'Mônica Ohana',
-        role: 'Artista plástica, tatuadora e professora',
-        bio: 'Mônica Ohana é uma artista plástica, tatuadora e professora de artes visuais. Sua abordagem é contemporânea e inovadora...',
-        fullBio: 'Mônica Ohana é uma artista plástica, tatuadora e professora de artes visuais. Sua abordagem é contemporânea e inovadora, buscando sempre o equilíbrio entre as técnicas tradicionais e as práticas contemporâneas.',
+        name: 'Mônica Lara',
+        role: 'Artista plástica, Tatuadora e Professora',
+        bio: 'Mônica Lara é uma artista plástica, tatuadora e professora de artes visuais. Sua abordagem é contemporânea e inovadora...',
+        fullBio: 'Especializada em conduzir processos criativos com o público 60+.  Monica é focada em promover expressão, autonomia e bem-estar por meio da arte, sempre valorizando as histórias, vivências e identidades de cada pessoa. Desenvolve oficinas e aulas de pintura e desenho  que exploram pintura, colagem, técnicas manuais e experimentações sensoriais, criando ambientes acolhedores onde cada participante se sente confiante para descobrir novas formas de se expressar. "Acredito profundamente no poder da arte como ferramenta de conexão, autoestima e saúde emocional — especialmente na maturidade. Meu propósito é transformar cada encontro em uma experiência única, significativa e cheia de cores"',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/monica.jpg',
         instagram: 'https://instagram.com/monicatatuadora',
         instagramLabel: '@monicatatuadora'
@@ -92,10 +92,10 @@ const teachers = {
 
     4: {
         name: 'Carlos Alexandre',
-        role: 'Desenhista, Ilustradore Professor',
+        role: 'Desenhista, Ilustrador e Professor',
         bio: 'Carlos Alexandre tem sólida experiência em desenho, ilustração digital e tradicional, quadrinhos e mangás. Já ilustrou diversos livros e projetos editoriais. Domina técnicas variadas e incentiva criatividade e expressão em seus alunos.',
         fullBio: 'Carlos Alexandre atua há 10 anos nas artes visuais, com experiência em desenho, ilustração digital e tradicional, quadrinhos, além de adicionar ilustração de mangás e animes ao seu repertório artístico. Já ilustrou mais de dez livros infantis — vários publicados — além de revistas, capas, mascotes e projetos editoriais. Domina ferramentas como Photoshop e Illustrator, criando personagens, narrativas visuais e artes em diversos estilos. Também possui prática em retratos realistas, aquarela e lápis de cor. Como professor, dedica-se à formação de novos artistas, incentivando criatividade, técnica e expressão pessoal.',
-        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/alexandre.jpg',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/alex.jpg',
         instagram: 'https://instagram.com/alexandrestudio182',
         instagramLabel: '@alexandrestudio182'
     },
