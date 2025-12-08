@@ -67,7 +67,7 @@ const teachers = {
         role: 'Idealizadora do Cotelier, Artista e Professora de Pintura',
         bio: 'Com mais de 20 anos de experiência, Márcia especializa-se em técnicas clássicas de pintura a óleo. Com abordagem acessível e inclusiva...',
         fullBio: 'Com mais de 20 anos de experiência, Márcia especializa-se em técnicas clássicas de pintura a óleo. Com abordagem acessível e inclusiva, Márcia busca inspirar e capacitar artistas de todos os níveis e idades.',
-        image: 'https://images.unsplash.com/photo-1444464666168-49d633b86797',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/marcia.jpg',
         instagram: 'https://instagram.com/marciaespindolame',
         instagramLabel: '@marciaespindolame'
     },
