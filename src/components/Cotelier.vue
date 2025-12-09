@@ -67,7 +67,7 @@ const teachers = {
         role: 'Idealizadora do Cotelier, Artista e Professora',
         bio: 'Márcia Espíndola é artista plástica e educadora com mais de 30 anos de experiência, formada pela Faculdade de Artes do Paraná. Fundadora do Cotelier, se dedica ao ensino de Desenho Artístico e Pintura em Tela para todas as idades, promovendo um ambiente acolhedor, inclusivo e voltado ao desenvolvimento da expressão artística.',
         fullBio: 'Marcia  Espíndola é artista plástica e educadora em artes, formada pela Faculdade de Artes do Paraná, com ampla experiência no ensino de desenho artístico e pintura em tela. Atua há mais de 30 anos na formação artística de crianças, jovens e adultos, sendo fundadora e orientadora do Cotelier – Espaço Artístico Colaborativo.',
-        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/marcia2.jpg',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/marcia2.jpeg',
         instagram: 'https://instagram.com/marciaespindolame',
         instagramLabel: '@marciaespindolame'
     },
@@ -127,16 +127,15 @@ const showGallery = (galleryId) => {
         1: {
             title: 'Nossa Rotina',
             images: [
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev001.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev003.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev005.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev004.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev005.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev006.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev007.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev008.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev009.jpg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev010.jpg'
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e001.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e007.jpeg',
+                // 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e004.jpeg',
+                // 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e005.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e006.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e007.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e008.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e009.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e010.jpeg'
 
             ]
         },
@@ -456,10 +455,10 @@ onUnmounted(() => {
                     <!-- Slide 1 -->
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(1)">
-                            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b" alt="Evento Workshop" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e006.jpeg" alt="Evento Workshop" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
-                                <h3 class="font-lora text-white text-3xl">Workshop de Pintura</h3>
-                                <p class="font-lora text-white/90 text-xl mt-2">Explorando técnicas impressionistas</p>
+                                <h3 class="font-lora text-white text-3xl">Nossa Rotina Diária</h3>
+                                <p class="font-lora text-white/90 text-xl mt-2">Um pouco do nosso trabalho diário no Cotelier</p>
                             </div>
                         </div>
                     </div>
@@ -478,7 +477,7 @@ onUnmounted(() => {
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(3)">
                             <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/04.jpeg" alt="III - Sábado Cultural" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
-                                <h3 class="font-lora text-white text-3xl">III  Sábado Cultural</h3>
+                                <h3 class="font-lora text-white text-3xl">III  Sábado Cultural - 2025</h3>
                                 <p class="font-lora text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
                             </div>
                         </div>
@@ -608,9 +607,11 @@ onUnmounted(() => {
         <div class="max-w-4xl mx-auto">
             <h2 class="font-lora text-4xl md:text-5xl text-center mb-16 text-stone-800">Horários de Aulas</h2>
             <div class="space-y-8">
+                
+                <p class="text-2xl text-stone-700 text-center mb-10 font-lora">Terça-feira</p>
                 <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="font-lora text-2xl text-stone-800">Pintura a Óleo para iniciantes</h3>
+                        <h3 class="font-lora text-2xl text-stone-800">Oficina Livre de Desenho Artístico e Pintura em Tela</h3>
                         <div class="flex items-center gap-1">
                             <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -618,8 +619,8 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Todas as Segundas e Quartas, 10:00 - 12:00</p>
-                    <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais e teoria das cores.</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Terça-feira, 14:00 às 15:30 e 16h às 17:30 - Faixa etária: a partir de 7 anos</p>
+                    <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -629,6 +630,63 @@ onUnmounted(() => {
                         </a>
                     </div>
                 </div>
+
+                <p class="text-2xl text-stone-700 text-center mb-10 font-lora">Quarta-feira</p>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-lora text-2xl text-stone-800">Oficina Livre de Desenho Artístico e Pintura em Tela</h3>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-blue-500 text-sm font-medium">Disponível</span>
+                        </div>
+                    </div>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Quarta-feira, 8:00 às 9:30 - Faixa Etária: A partir de 12 anos</p>
+                    <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
+                    <div class="flex gap-4">
+                        <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            Agende uma aula experimental
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="font-lora text-2xl text-stone-800">Oficina Kids</h3>
+                        <div class="flex items-center gap-1">
+                            <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-blue-500 text-sm font-medium">Disponível</span>
+                        </div>
+                    </div>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Quarta-feira,9:30 às 11h - Faixa Etária: De 7 a 11 anos</p>
+                    <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
+                    <div class="flex gap-4">
+                        <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            Agende uma aula experimental
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <p class="text-2xl text-stone-700 text-center mb-10 font-lora">Quinta-feira</p>
+
+
+
+
 
                 <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="flex items-center justify-between mb-4">
@@ -652,7 +710,7 @@ onUnmounted(() => {
                     </div>
                 </div>
 
-
+                <p class="text-2xl text-stone-700 text-center mb-10 font-lora">Sábado</p>
 
                 <div class="bg-white p-8 rounded-lg shadow-sm">
                     <div class="flex items-center justify-between mb-4">
