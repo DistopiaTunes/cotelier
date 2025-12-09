@@ -436,7 +436,7 @@ onUnmounted(() => {
                 
 
                 <p class="font-lora text-xl md:text-1xl text-stone-600 leading-relaxed text-justify mt-4">
-                    Com mais de 10 anos de experiência, nosso atelier é um ponto de encontro colaborativo, onde artistas de todas as idades e níveis podem se conectar, aprender e crescer juntos.
+                    Com mais de 20 anos de experiência, nosso atelier é um ponto de encontro colaborativo, onde artistas de todas as idades e níveis podem se conectar, aprender e crescer juntos.
                     Traga sua ideia, seu projeto, seu sonho, e vamos criar juntos!
                 </p>
             </div>
@@ -619,7 +619,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Terça-feira, 14:00 às 15:30 e 16h às 17:30 - Faixa etária: a partir de 7 anos</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Terças-feiras das <b><u>14:00 às 15:30h</u></b> e <b><u>16:00 às 17:30h</u></b>- Faixa etária: a partir de 7 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
@@ -643,7 +643,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Quarta-feira, 8:00 às 9:30 - Faixa Etária: A partir de 12 anos</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Quartas-feiras das <b><u>8:00 às 09:30h</u></b>  - Faixa Etária: A partir de 12 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
@@ -665,7 +665,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Quarta-feira,9:30 às 11h - Faixa Etária: De 7 a 11 anos</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Quartas-feiras das <b><u>9:30 às 11h</u></b> - Faixa Etária: De 7 a 11 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
@@ -698,7 +698,7 @@ onUnmounted(() => {
                             <span class="text-red-500 text-sm font-medium">Indisponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Todas as Quintas, 10:00 - 12:00</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Quintas-feiras das <b><u>10:00 às 12:00</u></b></p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Para todos entusiastas do desenho artístico, do básico ao avançado.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de entrar na lista de espera do curso de Desenho para Jovens e Adultos" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
@@ -722,7 +722,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Sábados, 09:00 - 12:00</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Sábados das <b><u>09:00 às 10:30</u></b> e <b><u>10:30 às 12:00</u></b> - Faixa etária: <a href="http://"></a> partir de 12 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Ideal para quem busca desenvolver sua própria linguagem artística. Explore livremente entre as técnicas de pintura a óleo ou acrílica, desenho artístico, gravura e ilustração digital</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o Ateliê Multidisciplinar" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
@@ -749,7 +749,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Sábados, 14:00 - 15:00</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Sábados das <b><u>14:00 às 15:00</u></b> - Faixa etária: a partir de 7 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem quer aprender a criar personagens no estilo mangá e anime.
                         Técnicas de desenho anatômico, expressões faciais, poses, narrativa visual e construção de estilo indivdual.</p>
                     <div class="flex gap-4">
@@ -773,7 +773,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Sábados, 15:00 - 16:00</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Sábados das <b><u>15:00 às 16:00</u></b> - Faixa etária: a partir de 7 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Curso ideal para quem deseja desenvolver ilustração artística em diferentes técnicas.
                         Inclui ilustração digital, tradicional, aquarela, quadrinhos, caricatura e ilustração infantil.</p>
                     <div class="flex gap-4">
