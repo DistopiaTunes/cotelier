@@ -33,10 +33,10 @@ const currentWorkshopIndex = ref(0);
 // Workshops data
 const workshops = [
     {
-        title: 'Nova Oficina de Artes',
-        image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f',
-        description: 'Descubra sua criatividade em nossa nova oficina de artes! Uma experiência única para explorar diferentes técnicas e expressar sua arte.',
-        details: 'Venha participar de uma oficina especial onde você poderá experimentar diversas técnicas artísticas, desde pintura até desenho, em um ambiente acolhedor e inspirador.',
+        title: 'Mãos que contam histórias',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/oficina/60+.jpeg',
+        description: 'Quantas histórias suas mãos guardam? Cada linha, cada marca é um capítulo da sua jornada. ​Chegou a hora de transformar essas memórias em arte.',
+        details: 'Temos o prazer de convidar você para a nossa oficina especial de verão: "Mãos que contam histórias". ​Um espaço pensado exclusivamente para o público 60+, onde a criatividade não tem idade. Venha experimentar novas técnicas, fazer amigos, tomar um café gostoso e, acima de tudo, expressar quem você é através da arte',
         additionalInfo: 'Não é necessário ter experiência prévia. Todos são bem-vindos!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Nova Oficina de Artes',
         instagramLink: 'https://instagram.com/cotelier.oficial'
