@@ -310,19 +310,6 @@ onUnmounted(() => {
                     <transition name="fade" mode="out-in">
                         <img :key="currentWorkshopIndex" :src="workshops[currentWorkshopIndex].image" :alt="workshops[currentWorkshopIndex].title" class="w-full h-full object-cover">
                     </transition>
-                    <!-- Teacher Overlay -->
-                    <div v-if="workshops[currentWorkshopIndex].teacherIds && workshops[currentWorkshopIndex].teacherIds.length > 0" class="absolute bottom-0 left-0 right-0 z-10 bg-black/60 backdrop-blur-sm py-3 px-4">
-                        <div class="flex items-center justify-center gap-3">
-                            <div v-for="teacherId in workshops[currentWorkshopIndex].teacherIds" :key="teacherId" class="flex items-center gap-3">
-                                <img 
-                                    :src="teachers[teacherId]?.image" 
-                                    :alt="teachers[teacherId]?.name"
-                                    class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover shadow-md flex-shrink-0"
-                                />
-                                <p class="text-white text-sm md:text-base font-lora font-semibold whitespace-nowrap">{{ teachers[teacherId]?.name }}</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 
                 <!-- Content Section -->
@@ -369,6 +356,19 @@ onUnmounted(() => {
                     class="w-2 h-2 rounded-full transition-all"
                     :class="currentWorkshopIndex === index ? 'bg-stone-800 w-8' : 'bg-stone-400 hover:bg-stone-600'"
                 ></button>
+            </div>
+        </div>
+        <!-- Teacher Overlay (outside dialog) -->
+        <div v-if="workshops[currentWorkshopIndex].teacherIds && workshops[currentWorkshopIndex].teacherIds.length > 0" class="w-[90%] max-w-4xl bg-black/60 backdrop-blur-sm py-3 px-4 rounded-lg mb-4">
+            <div class="flex items-center justify-center gap-3">
+                <div v-for="teacherId in workshops[currentWorkshopIndex].teacherIds" :key="teacherId" class="flex items-center gap-3">
+                    <img 
+                        :src="teachers[teacherId]?.image" 
+                        :alt="teachers[teacherId]?.name"
+                        class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover shadow-md flex-shrink-0"
+                    />
+                    <p class="text-white text-sm md:text-base font-lora font-semibold whitespace-nowrap">{{ teachers[teacherId]?.name }}</p>
+                </div>
             </div>
         </div>
         <!-- Close Button -->
