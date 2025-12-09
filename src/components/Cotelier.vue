@@ -272,7 +272,7 @@ const startWorkshopAutoScroll = () => {
         if (showWorkshopDialog.value && workshops.length > 1) {
             nextWorkshop();
         }
-    }, 5000);
+    }, 10000);
 };
 
 // Pause autoscroll temporarily (will resume after 8 seconds)
