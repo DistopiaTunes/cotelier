@@ -64,10 +64,10 @@ const workshops = [
 const teachers = {
     1: {
         name: 'Márcia Espíndola',
-        role: 'Idealizadora do Cotelier, Artista e Professora de Pintura',
-        bio: 'Com mais de 20 anos de experiência, Márcia especializa-se em técnicas clássicas de pintura a óleo. Com abordagem acessível e inclusiva...',
-        fullBio: 'Com mais de 20 anos de experiência, Márcia especializa-se em técnicas clássicas de pintura a óleo. Com abordagem acessível e inclusiva, Márcia busca inspirar e capacitar artistas de todos os níveis e idades.',
-        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/marcia.jpg',
+        role: 'Idealizadora do Cotelier, Artista e Professora',
+        bio: 'Márcia Espíndola é artista plástica e educadora com mais de 30 anos de experiência, formada pela Faculdade de Artes do Paraná. Fundadora do Cotelier, se dedica ao ensino de Desenho Artístico e Pintura em Tela para todas as idades, promovendo um ambiente acolhedor, inclusivo e voltado ao desenvolvimento da expressão artística.',
+        fullBio: 'Marcia  Espíndola é artista plástica e educadora em artes, formada pela Faculdade de Artes do Paraná, com ampla experiência no ensino de desenho artístico e pintura em tela. Atua há mais de 30 anos na formação artística de crianças, jovens e adultos, sendo fundadora e orientadora do Cotelier – Espaço Artístico Colaborativo.',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/marcia2.jpg',
         instagram: 'https://instagram.com/marciaespindolame',
         instagramLabel: '@marciaespindolame'
     },
@@ -92,7 +92,7 @@ const teachers = {
 
     4: {
         name: 'Carlos Alexandre',
-        role: 'Desenhista, Ilustrador, Caricaturista e Professor',
+        role: 'Desenhista, Ilustrador eProfessor',
         bio: 'Carlos Alexandre tem sólida experiência em desenho, ilustração digital e tradicional, quadrinhos e mangás. Já ilustrou diversos livros e projetos editoriais. Domina técnicas variadas e incentiva criatividade e expressão em seus alunos.',
         fullBio: 'Carlos Alexandre atua há 10 anos nas artes visuais, com experiência em desenho, ilustração digital e tradicional, quadrinhos, além de adicionar ilustração de mangás e animes ao seu repertório artístico. Já ilustrou mais de dez livros infantis — vários publicados — além de revistas, capas, mascotes e projetos editoriais. Domina ferramentas como Photoshop e Illustrator, criando personagens, narrativas visuais e artes em diversos estilos. Também possui prática em retratos realistas, aquarela e lápis de cor. Como professor, dedica-se à formação de novos artistas, incentivando criatividade, técnica e expressão pessoal.',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/alex.jpg',
@@ -125,17 +125,19 @@ const showGallery = (galleryId) => {
     // Gallery data - in real app this would likely come from an API
     const galleries = {
         1: {
-            title: 'Workshop de Pintura - 2024',
+            title: 'Nossa Rotina',
             images: [
-                'https://images.unsplash.com/photo-1515169067868-5387ec356754',
-                'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b',
-                'https://images.unsplash.com/photo-1513364776144-60967b0f800f',
-                'https://images.unsplash.com/photo-1515169067868-5387ec356754',
-                'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b',
-                'https://images.unsplash.com/photo-1513364776144-60967b0f800f',
-                'https://images.unsplash.com/photo-1515169067868-5387ec356754',
-                'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b',
-                'https://images.unsplash.com/photo-1513364776144-60967b0f800f'
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev001.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev003.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev005.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev004.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev005.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev006.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev007.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev008.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev009.jpg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/dia/ev010.jpg'
+
             ]
         },
         2: {
