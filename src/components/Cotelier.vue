@@ -909,6 +909,7 @@ onUnmounted(() => {
     <footer class="bg-stone-900 text-stone-300 py-8">
         <div class="text-center font-cormorant">
             <p>&copy; 2025 Cotelier. Todos os direitos reservados.</p>
+            <p class="text-sm">O portal do Cotelier não utiliza, armazena ou compartilha cookies e dados cadastrais dos seus clientes.</p>
         </div>
     </footer>
   </div>
