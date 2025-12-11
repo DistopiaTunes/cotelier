@@ -65,7 +65,7 @@ const workshops = [
     },
 
     {
-        title: 'Cerâmica - Xícara e Bowl com Vinho',
+        title: 'Cerâmica - Xícara e Bowl com Vinho (18+)',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/cer/xic.jpeg',
         description: 'Aprenda cerâmica de forma prática e divertida.',
         details: 'Oficina para adultos iniciantes que querem viver a experiência da cerâmica. Iremos aprender a modelar as peças pela técnica de abertura de placas e pinch além de  explorar diversas possibilidades na criação e personalização. Faremos a festa usando carimbos e cortadores.',
@@ -82,7 +82,7 @@ const workshops = [
         title: 'Pequenos Artistas Em Ação',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/wpq/wpq.jpeg',
         description: 'Aprenda as técnicas fundamentais da pintura em aquarela com nossa oficina especializada.',
-        details: 'Durante 4 encontros, vamos explorar técnicas artísticas de forma leve, divertida e super criativa: Pintura com giz pastel oleos, Mosaico com aquarela, Colagem usando papelão, Artesanato com papel alumínio e canetinhas',
+        details: 'Durante 4 encontros, vamos explorar técnicas artísticas de forma leve, divertida e super criativa: Pintura com giz pastel oleoso, mosaico com aquarela, colagem usando papelão, artesanato com papel alumínio e canetinhas e mais!',
         additionalInfo: 'Um convite para experimentar, ousar, imaginar e transformar ideias em arte. Materiais inclusos. Vagas limitadas!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
         teacherIds: [5],
