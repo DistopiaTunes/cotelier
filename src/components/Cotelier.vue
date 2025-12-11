@@ -57,10 +57,10 @@ const workshops = [
         description: 'Aprenda cerâmica de forma prática e divertida.',
         details: 'Oficina para iniciantes que querem viver a experiência da cerâmica. Iremos aprender a modelar as peças pela técnica de abertura de placas e pinch além de  explorar diversas possibilidades na criação e personalização. Faremos a festa usando carimbos e cortadores.',
         additionalInfo: 'Oportunidade imperdível! Materiais inclusos. Vagas limitadas!',
-        whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
+        whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina Cerâmica - Pratinhos & Potinhos',
         teacherIds: [6],
         price: '$250',
-        dateTime: '15 Jan - 14h',
+        dateTime: '16 Jan - 9h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
     },
 
@@ -70,10 +70,10 @@ const workshops = [
         description: 'Aprenda cerâmica de forma prática e divertida.',
         details: 'Oficina para adultos iniciantes que querem viver a experiência da cerâmica. Iremos aprender a modelar as peças pela técnica de abertura de placas e pinch além de  explorar diversas possibilidades na criação e personalização. Faremos a festa usando carimbos e cortadores.',
         additionalInfo: 'Oportunidade única! Materiais inclusos. Vagas limitadas!',
-        whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
+        whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina Cerâmica - Xícara e Bowl com Vinho (18+)',
         teacherIds: [6],
         price: '$270',
-        dateTime: '15 Jan - 14h',
+        dateTime: '16 Jan - 19h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
     },
 
@@ -84,7 +84,7 @@ const workshops = [
         description: 'Aprenda as técnicas fundamentais da pintura em aquarela com nossa oficina especializada.',
         details: 'Durante 4 encontros, vamos explorar técnicas artísticas de forma leve, divertida e super criativa: Pintura com giz pastel oleoso, mosaico com aquarela, colagem usando papelão, artesanato com papel alumínio e canetinhas e mais!',
         additionalInfo: 'Um convite para experimentar, ousar, imaginar e transformar ideias em arte. Materiais inclusos. Vagas limitadas!',
-        whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
+        whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina Pequenos Artistas Em Ação',
         teacherIds: [5],
         price: '$100',
         dateTime: '15 Jan - 14h',
@@ -759,7 +759,7 @@ onUnmounted(() => {
                 <p class="text-2xl text-stone-700 text-center mb-10 font-lora">Segunda-feira</p>
                 
                 
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-white p-8 rounded-lg shadow-sm relative">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-lora text-2xl text-stone-800">Oficina Livre de Desenho Artístico e Pintura em Tela</h3>
                         <div class="flex items-center gap-1">
@@ -779,13 +779,22 @@ onUnmounted(() => {
                             Agende uma aula experimental
                         </a>
                     </div>
+                    <!-- Teacher Badge -->
+                    <div class="absolute bottom-8 right-8 flex items-center gap-2 bg-white-600/80 rounded-lg px-4 py-2">
+                        <img 
+                            :src="teachers[5]?.image" 
+                            :alt="teachers[5]?.name"
+                            class="w-5 h-5 rounded-full object-cover flex-shrink-0"
+                        />
+                        <p class="text-stone text-sm font-lora font-semibold">{{ teachers[5]?.name }}</p>
+                    </div>
                 </div>
 
 
                 <p class="text-2xl text-stone-700 text-center mb-10 font-lora">Terça-feira</p>
                 
                 
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-white p-8 rounded-lg shadow-sm relative">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-lora text-2xl text-stone-800">Oficina Livre de Desenho Artístico e Pintura em Tela</h3>
                         <div class="flex items-center gap-1">
@@ -805,11 +814,20 @@ onUnmounted(() => {
                             Agende uma aula experimental
                         </a>
                     </div>
+                    <!-- Teacher Badge -->
+                    <div class="absolute bottom-8 right-8 flex items-center gap-2 bg-white-600/80 rounded-lg px-4 py-2">
+                        <img 
+                            :src="teachers[1]?.image" 
+                            :alt="teachers[1]?.name"
+                            class="w-5 h-5 rounded-full object-cover flex-shrink-0"
+                        />
+                        <p class="text-stone text-sm font-lora font-semibold">{{ teachers[1]?.name }}</p>
+                    </div>
                 </div>
 
                 <p class="text-2xl text-stone-700 text-center mb-10 font-lora">Quarta-feira</p>
 
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-white p-8 rounded-lg shadow-sm relative">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-lora text-2xl text-stone-800">Oficina Livre de Desenho Artístico e Pintura em Tela</h3>
                         <div class="flex items-center gap-1">
@@ -829,9 +847,18 @@ onUnmounted(() => {
                             Agende uma aula experimental
                         </a>
                     </div>
+                    <!-- Teacher Badge -->
+                    <div class="absolute bottom-8 right-8 flex items-center gap-2 bg-white-600/80 rounded-lg px-4 py-2">
+                        <img 
+                            :src="teachers[1]?.image" 
+                            :alt="teachers[1]?.name"
+                            class="w-5 h-5 rounded-full object-cover flex-shrink-0"
+                        />
+                        <p class="text-stone text-sm font-lora font-semibold">{{ teachers[1]?.name }}</p>
+                    </div>
                 </div>
 
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-white p-8 rounded-lg shadow-sm relative">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-lora text-2xl text-stone-800">Oficina Kids</h3>
                         <div class="flex items-center gap-1">
@@ -851,6 +878,15 @@ onUnmounted(() => {
                             Agende uma aula experimental
                         </a>
                     </div>
+                    <!-- Teacher Badge -->
+                    <div class="absolute bottom-8 right-8 flex items-center gap-2 bg-white-600/80 rounded-lg px-4 py-2">
+                        <img 
+                            :src="teachers[1]?.image" 
+                            :alt="teachers[1]?.name"
+                            class="w-5 h-5 rounded-full object-cover flex-shrink-0"
+                        />
+                        <p class="text-stone text-sm font-lora font-semibold">{{ teachers[1]?.name }}</p>
+                    </div>
                 </div>
 
 
@@ -864,7 +900,7 @@ onUnmounted(() => {
 
 
 
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-white p-8 rounded-lg shadow-sm relative">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-lora text-2xl text-stone-800">Desenho para Jovens e Adultos</h3>
                         <div class="flex items-center gap-1">
@@ -884,11 +920,20 @@ onUnmounted(() => {
                             Deixe seu nome na lista de espera
                         </a>
                     </div>
+                    <!-- Teacher Badge -->
+                    <div class="absolute bottom-8 right-8 flex items-center gap-2 bg-white-600/80 rounded-lg px-4 py-2">
+                        <img 
+                            :src="teachers[1]?.image" 
+                            :alt="teachers[1]?.name"
+                            class="w-5 h-5 rounded-full object-cover flex-shrink-0"
+                        />
+                        <p class="text-stone text-sm font-lora font-semibold">{{ teachers[1]?.name }}</p>
+                    </div>
                 </div>
 
                 <p class="text-2xl text-stone-700 text-center mb-10 font-lora">Sábado</p>
 
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-white p-8 rounded-lg shadow-sm relative">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-lora text-2xl text-stone-800">Ateliê Multidisciplinar</h3>
                         <div class="flex items-center gap-1">
@@ -908,6 +953,15 @@ onUnmounted(() => {
                             Agende uma aula experimental
                         </a>
                     </div>
+                    <!-- Teacher Badge -->
+                    <div class="absolute bottom-8 right-8 flex items-center gap-2 bg-white-600/80 rounded-lg px-4 py-2">
+                        <img 
+                            :src="teachers[2]?.image" 
+                            :alt="teachers[2]?.name"
+                            class="w-5 h-5 rounded-full object-cover flex-shrink-0"
+                        />
+                        <p class="text-stone text-sm font-lora font-semibold">{{ teachers[2]?.name }}</p>
+                    </div>
                 </div>
 
 
@@ -915,7 +969,7 @@ onUnmounted(() => {
 
 
 
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-white p-8 rounded-lg shadow-sm relative">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-lora text-2xl text-stone-800">Anime e Mangá</h3>
                         <div class="flex items-center gap-1">
@@ -936,10 +990,19 @@ onUnmounted(() => {
                             Agende uma aula experimental
                         </a>
                     </div>
+                    <!-- Teacher Badge -->
+                    <div class="absolute bottom-8 right-8 flex items-center gap-2 bg-white-600/80 rounded-lg px-4 py-2">
+                        <img 
+                            :src="teachers[4]?.image" 
+                            :alt="teachers[4]?.name"
+                            class="w-5 h-5 rounded-full object-cover flex-shrink-0"
+                        />
+                        <p class="text-stone text-sm font-lora font-semibold">{{ teachers[4]?.name }}</p>
+                    </div>
                 </div>
 
 
-                <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="bg-white p-8 rounded-lg shadow-sm relative">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="font-lora text-2xl text-stone-800">Ilustração (Digital, Tradicional e Aquarela)</h3>
                         <div class="flex items-center gap-1">
@@ -959,6 +1022,15 @@ onUnmounted(() => {
                             </svg>
                             Agende uma aula experimental
                         </a>
+                    </div>
+                    <!-- Teacher Badge -->
+                    <div class="absolute bottom-8 right-8 flex items-center gap-2 bg-white-600/80 rounded-lg px-4 py-2">
+                        <img 
+                            :src="teachers[4]?.image" 
+                            :alt="teachers[4]?.name"
+                            class="w-5 h-5 rounded-full object-cover flex-shrink-0"
+                        />
+                        <p class="text-stone text-sm font-lora font-semibold">{{ teachers[4]?.name }}</p>
                     </div>
                 </div>
 <!-- Inserir novos cursos aqui -->
