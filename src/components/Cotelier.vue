@@ -50,11 +50,11 @@ const workshops = [
         // instagramLink: 'https://instagram.com/cotelier.oficial'
     },
     {
-        title: 'Oficina de Pintura em Aquarela',
-        image: 'https://images.unsplash.com/photo-1515169067868-5387ec356754',
+        title: 'Pequenos Artistas Em Ação',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/wpq/wpq.jpeg',
         description: 'Aprenda as técnicas fundamentais da pintura em aquarela com nossa oficina especializada.',
-        details: 'Nesta oficina você aprenderá desde os básicos até técnicas avançadas de aquarela, explorando cores, texturas e diferentes estilos artísticos.',
-        additionalInfo: 'Materiais inclusos. Vagas limitadas!',
+        details: 'Durante 4 encontros, vamos explorar técnicas artísticas de forma leve, divertida e super criativa: Pintura com giz pastel oleos, Mosaico com aquarela, Colagem usando papelão, Artesanato com papel alumínio e canetinhas',
+        additionalInfo: 'Um convite para experimentar, ousar, imaginar e transformar ideias em arte. Materiais inclusos. Vagas limitadas!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
         teacherIds: [4],
         price: '$100',
