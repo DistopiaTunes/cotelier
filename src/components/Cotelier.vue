@@ -675,17 +675,17 @@ onUnmounted(() => {
                             <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/bis/02.jpeg" alt="III - Sábado Cultural" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
                                 <h3 class="font-lora text-white text-3xl">Dia dos Avôs e Avós - Espaço Bis&Avós - 2025</h3>
-                                <p class="font-lora text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
+                                <p class="font-lora text-white/90 text-xl mt-2">Celebrando a melhor idade com arte!</p>
                             </div>
                         </div>
                     </div>
                     <!-- Slide 5 -->
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(5)">
-                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/nam/05.jpeg" alt="Seu traço completa o meu - Jockey Plaza - Parceria com Beer & Wine" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/nam/04.jpeg" alt="Seu traço completa o meu - Jockey Plaza - Parceria com Beer & Wine" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
-                                <h3 class="font-lora text-white text-3xl">Seu traço completa o meu - Jockey Plaza - Parceria com Beer & Wine</h3>
-                                <p class="font-lora text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
+                                <h3 class="font-lora text-white text-3xl">Você completa meu traço - Dia dos namorados - 2025</h3>
+                                <p class="font-lora text-white/90 text-xl mt-2"> Jockey Plaza - Parceria com Beer & Wine</p>
                             </div>
                         </div>
                     </div>
