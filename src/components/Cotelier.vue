@@ -42,9 +42,10 @@ const workshops = [
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/oficina/60%2B.jpeg',
         description: 'Quantas histórias suas mãos guardam?',
         details: 'Temos o prazer de convidar você para a nossa oficina especial de verão: "Mãos que contam histórias". ​Um espaço pensado exclusivamente para o público 60+, onde a criatividade não tem idade. Venha experimentar novas técnicas, fazer amigos, tomar um café gostoso e, acima de tudo, expressar quem você é através da arte',
-        additionalInfo: 'Materiais inclusos.Não é necessário ter experiência prévia. Vagas Limitadas',
+        additionalInfo: 'Materiais inclusos. Não é necessário ter experiência prévia. Vagas Limitadas',
         whatsappMessage: 'Olá! Gostaria de informações sobre a "Oficina Mãos que conta histórias (60+)"',
         teacherIds: [3], // Mônica Lara
+        duration: '48h',
         price: '2x R$380',
         dateTime: '8 Jan - 14h'
         // instagramLink: 'https://instagram.com/cotelier.oficial'
@@ -59,6 +60,7 @@ const workshops = [
         additionalInfo: 'Oportunidade imperdível! Materiais inclusos. Vagas limitadas!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina Cerâmica - Pratinhos & Potinhos',
         teacherIds: [6],
+        duration: '2,5h',
         price: 'R$250',
         dateTime: '16 Jan - 9h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
@@ -72,6 +74,7 @@ const workshops = [
         additionalInfo: 'Oportunidade única! Materiais inclusos. Vagas limitadas!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina Cerâmica - Xícara e Bowl com Vinho (18+)',
         teacherIds: [6],
+        duration: '2,5h',
         price: 'R$270',
         dateTime: '16 Jan - 19h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
@@ -86,8 +89,9 @@ const workshops = [
         additionalInfo: 'Um convite para experimentar, ousar, imaginar e transformar ideias em arte. Materiais inclusos. Vagas limitadas!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina Pequenos Artistas Em Ação',
         teacherIds: [5],
+        duration: '6h',
         price: 'R$280',
-        dateTime: '15 Jan - 14h',
+        dateTime: '6 Jan - 9h ou 14h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
     },
     {
@@ -98,6 +102,7 @@ const workshops = [
         additionalInfo: 'Ideal para iniciantes e intermediários que desejam aprimorar suas técnicas.',
         whatsappMessage: 'Olá! Gostaria de informações sobre o Workshop de Caricaturas',
         teacherIds: [4],
+        duration: '2h',
         price: 'R$100',
         dateTime: '15 Jan - 14h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
@@ -462,21 +467,31 @@ onUnmounted(() => {
                                 {{ workshops[currentWorkshopIndex].additionalInfo }}
                             </p>
                             
-                            <!-- Price and DateTime Cards -->
-                            <div class="flex justify-between gap-3 mb-6 flex-wrap">
-                                <div class="bg-stone-100 border border-stone-300 rounded-lg px-4 py-2 shadow-sm">
+                            <!-- Duration, Price and DateTime Cards -->
+                            <div class="flex flex-col md:flex-row items-center md:items-stretch md:justify-between gap-3 mb-6">
+                                <!-- Duration Card -->
+                                <div class="bg-stone-100 border border-stone-300 rounded-lg px-4 py-2 shadow-sm w-full md:w-auto">
                                     <span 
                                         contenteditable="true" 
-                                        class="text-stone-800 text-xl md:text-2xl font-lora font-bold outline-none focus:bg-stone-50 focus:ring-2 focus:ring-stone-400 rounded px-1"
-                                        @blur="workshops[currentWorkshopIndex].dateTime = $event.target.textContent"
-                                    >{{ workshops[currentWorkshopIndex].dateTime || '15 Jan - 14h' }}</span>
+                                        class="text-stone-800 text-base md:text-lg font-lora font-bold outline-none focus:bg-stone-50 focus:ring-2 focus:ring-stone-400 rounded px-1"
+                                        @blur="workshops[currentWorkshopIndex].duration = $event.target.textContent"
+                                    >{{ workshops[currentWorkshopIndex].duration || '3h' }}</span>
                                 </div>
-                                <div class="bg-stone-100 border border-stone-300 rounded-lg px-4 py-2 shadow-sm">
+                                <!-- Price Card -->
+                                <div class="bg-stone-100 border border-stone-300 rounded-lg px-4 py-2 shadow-sm w-full md:w-auto">
                                     <span 
                                         contenteditable="true" 
-                                        class="text-stone-800 text-xl md:text-2xl font-lora font-bold outline-none focus:bg-stone-50 focus:ring-2 focus:ring-stone-400 rounded px-1"
+                                        class="text-stone-800 text-base md:text-lg font-lora font-bold outline-none focus:bg-stone-50 focus:ring-2 focus:ring-stone-400 rounded px-1"
                                         @blur="workshops[currentWorkshopIndex].price = $event.target.textContent"
                                     >{{ workshops[currentWorkshopIndex].price || 'R$ 100' }}</span>
+                                </div>
+                                <!-- DateTime Card -->
+                                <div class="bg-stone-100 border border-stone-300 rounded-lg px-4 py-2 shadow-sm w-full md:w-auto">
+                                    <span 
+                                        contenteditable="true" 
+                                        class="text-stone-800 text-base md:text-lg font-lora font-bold outline-none focus:bg-stone-50 focus:ring-2 focus:ring-stone-400 rounded px-1"
+                                        @blur="workshops[currentWorkshopIndex].dateTime = $event.target.textContent"
+                                    >{{ workshops[currentWorkshopIndex].dateTime || '15 Jan - 14h' }}</span>
                                 </div>
                             </div>
                         </div>
