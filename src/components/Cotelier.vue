@@ -49,6 +49,22 @@ const workshops = [
         dateTime: '8 Jan - 14h'
         // instagramLink: 'https://instagram.com/cotelier.oficial'
     },
+
+
+    {
+        title: 'Cerâmica - Pratinhos & Potinhos',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/cer/prato.jpg',
+        description: 'Aprenda as técnicas fundamentais da pintura em aquarela com nossa oficina especializada.',
+        details: 'Durante 4 encontros, vamos explorar técnicas artísticas de forma leve, divertida e super criativa: Pintura com giz pastel oleos, Mosaico com aquarela, Colagem usando papelão, Artesanato com papel alumínio e canetinhas',
+        additionalInfo: 'Um convite para experimentar, ousar, imaginar e transformar ideias em arte. Materiais inclusos. Vagas limitadas!',
+        whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
+        teacherIds: [5],
+        price: '$100',
+        dateTime: '15 Jan - 14h',
+        instagramLink: 'https://instagram.com/cotelier.oficial'
+    },
+
+
     {
         title: 'Pequenos Artistas Em Ação',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/wpq/wpq.jpeg',
@@ -56,7 +72,7 @@ const workshops = [
         details: 'Durante 4 encontros, vamos explorar técnicas artísticas de forma leve, divertida e super criativa: Pintura com giz pastel oleos, Mosaico com aquarela, Colagem usando papelão, Artesanato com papel alumínio e canetinhas',
         additionalInfo: 'Um convite para experimentar, ousar, imaginar e transformar ideias em arte. Materiais inclusos. Vagas limitadas!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
-        teacherIds: [4],
+        teacherIds: [5],
         price: '$100',
         dateTime: '15 Jan - 14h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
@@ -119,11 +135,18 @@ const teachers = {
         role: 'Desenhista, Ilustradora, e professora',
         bio: 'Alessa Souza cria ilustrações delicadas e cheias de poesia, trazendo leveza e sensibilidade para cada traço. Como ilustradora e professora, busca inspirar seus alunos a encontrarem beleza nos pequenos detalhes do cotidiano.',
         fullBio: 'Alessa Souza é desenhista, ilustradora e professora, dedicada a cultivar a criatividade por meio de desenhos suaves e expressivos. Sua trajetória é marcada pela busca por inspiração em momentos simples e na natureza, transmitindo emoções e sonhos através de suas obras. Alessa conduz suas aulas de modo gentil, incentivando cada aluno a desenvolver sua própria voz artística, com olhar atento à harmonia e à sutileza das cores e formas. As ilustrações que cria são reconhecidas por despertar sensações de aconchego, imaginação e encantamento em quem as aprecia.',
-        image: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/alessa.jpeg',
         instagram: 'https://instagram.com/ilustracaricaturas_',
         instagramLabel: '@ilustracaricaturas_/'
+    },
+    6: {
+        name: 'Luciana Kotaka',
+        role: 'Ceramista e Psicóloga',
+        bio: 'Luciana Kotaka é ceramista e psicóloga, unindo as duas áreas em um trabalho que visa produzir peças que revelam nossa essência. A cerâmica possibilita um trabalho interno intenso, pois o processo entre a criação e a finalização das peças nos leva a confrontar aspectos como o tempo, o perfeccionismo, o estado de presença e a frustração. Um trabalho artístico e emocional.',
+        fullBio:'Luciana Kotaka é ceramista e psicóloga, unindo as duas áreas em um trabalho que visa produzir peças que revelam nossa essência. A cerâmica possibilita um trabalho interno intenso, pois o processo entre a criação e a finalização das peças nos leva a confrontar aspectos como o tempo, o perfeccionismo, o estado de presença e a frustração. Um trabalho artístico e emocional.',
+        instagram: 'https://instagram.com/lu.ceramicando',
+        instagramLabel: '@lu.ceramicando'
     }
-
 };
 
 const moveSlide = (direction) => {
