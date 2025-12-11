@@ -97,6 +97,7 @@ const workshops = [
         details: 'Aprenda a criar desenhos realistas impressionantes através de técnicas de sombreamento, proporção e detalhamento.',
         additionalInfo: 'Ideal para iniciantes e intermediários que desejam aprimorar suas técnicas.',
         whatsappMessage: 'Olá! Gostaria de informações sobre o Workshop de Caricaturas',
+        teacherIds: [4],
         price: '$100',
         dateTime: '15 Jan - 14h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
