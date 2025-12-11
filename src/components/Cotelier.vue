@@ -668,7 +668,7 @@ onUnmounted(() => {
                         </div>
                     </div>
                     <!-- Slide 2 -->
-                    <div class="min-w-full">
+                    <!-- <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(2)">
                             <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f" alt="Exposição" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
@@ -676,7 +676,7 @@ onUnmounted(() => {
                                 <p class="font-lora text-white/90 text-xl mt-2">Alunos artistas apresentam suas obras</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Slide 3 -->
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(3)">
