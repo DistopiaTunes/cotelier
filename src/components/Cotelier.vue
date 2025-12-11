@@ -230,16 +230,13 @@ const showGallery = (galleryId) => {
             ]
         },
         5: {
-            title: 'Workshop de Caricaturas - 2025',
+            title: 'Seu traço completa o meu - Jockey Plaza - Parceria com Beer & Wine - 2025',
             images: [
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/caricaturas/01.jpeg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/caricaturas/02.jpeg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/caricaturas/03.jpeg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/caricaturas/04.jpeg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/caricaturas/05.jpeg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/caricaturas/06.jpeg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/caricaturas/07.jpeg',
-                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/caricaturas/08.jpeg'
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/nam/01.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/nam/02.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/nam/03.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/nam/04.jpeg',
+                'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/nam/05.jpeg'
             ]
         }
     };
@@ -675,9 +672,9 @@ onUnmounted(() => {
                     <!-- Slide 4 -->
                      <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(4)">
-                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/04.jpeg" alt="III - Sábado Cultural" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/bis/02.jpeg" alt="III - Sábado Cultural" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
-                                <h3 class="font-lora text-white text-3xl">III  Sábado Cultural - 2025</h3>
+                                <h3 class="font-lora text-white text-3xl">Dia dos Avôs e Avós - Espaço Bis&Avós - 2025</h3>
                                 <p class="font-lora text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
                             </div>
                         </div>
@@ -685,9 +682,9 @@ onUnmounted(() => {
                     <!-- Slide 5 -->
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(5)">
-                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/04.jpeg" alt="III - Sábado Cultural" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/nam/05.jpeg" alt="Seu traço completa o meu - Jockey Plaza - Parceria com Beer & Wine" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
-                                <h3 class="font-lora text-white text-3xl">Evento 5</h3>
+                                <h3 class="font-lora text-white text-3xl">Seu traço completa o meu - Jockey Plaza - Parceria com Beer & Wine</h3>
                                 <p class="font-lora text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
                             </div>
                         </div>
@@ -695,7 +692,7 @@ onUnmounted(() => {
                     <!-- Slide 6 -->
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(6)">
-                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/04.jpeg" alt="III - Sábado Cultural" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/sab-cult/0.jpeg" alt="III - Sábado Cultural" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
                                 <h3 class="font-lora text-white text-3xl">Evento 6</h3>
                                 <p class="font-lora text-white/90 text-xl mt-2">Um dia muito especial para prestigiar nossos alunos</p>
