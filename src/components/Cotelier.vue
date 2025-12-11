@@ -660,7 +660,7 @@ onUnmounted(() => {
                     <!-- Slide 1 -->
                     <div class="min-w-full">
                         <div class="relative h-[500px] cursor-pointer" @click="showGallery(1)">
-                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e006.jpeg" alt="Evento Workshop" class="w-full h-full object-cover">
+                            <img src="https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/dia/e012.jpeg" alt="Evento Workshop" class="w-full h-full object-cover">
                             <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-8">
                                 <h3 class="font-lora text-white text-3xl">Nossa Rotina Diária</h3>
                                 <p class="font-lora text-white/90 text-xl mt-2">Um pouco do nosso trabalho diário no Cotelier</p>
