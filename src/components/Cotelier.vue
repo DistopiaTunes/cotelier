@@ -42,7 +42,7 @@ const workshops = [
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/oficina/60%2B.jpeg',
         description: 'Quantas histórias suas mãos guardam?',
         details: 'Temos o prazer de convidar você para a nossa oficina especial de verão: "Mãos que contam histórias". ​Um espaço pensado exclusivamente para o público 60+, onde a criatividade não tem idade. Venha experimentar novas técnicas, fazer amigos, tomar um café gostoso e, acima de tudo, expressar quem você é através da arte',
-        additionalInfo: 'Materiais inclusos - Não é necessário ter experiência prévia - Vagas Limitadas',
+        additionalInfo: 'Materiais inclusos.Não é necessário ter experiência prévia. Vagas Limitadas',
         whatsappMessage: 'Olá! Gostaria de informações sobre a "Oficina Mãos que conta histórias (60+)"',
         teacherIds: [3], // Mônica Lara
         price: '2x R$380',
@@ -55,7 +55,7 @@ const workshops = [
         title: 'Cerâmica - Pratinhos & Potinhos',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/cer/prato.jpg',
         description: 'Aprenda cerâmica de forma prática e divertida.',
-        details: 'Oficina para iniciantes que querem viver a experiência da cerâmica. Iremos aprender a modelar as peças pela técnica de abertura de placas e pinch alémn de  explorar diversas possibilidades na criação e personalização. Faremos a festa usando carimbos e cortadores.',
+        details: 'Oficina para iniciantes que querem viver a experiência da cerâmica. Iremos aprender a modelar as peças pela técnica de abertura de placas e pinch além de  explorar diversas possibilidades na criação e personalização. Faremos a festa usando carimbos e cortadores.',
         additionalInfo: 'Oportunidade imperdível! Materiais inclusos. Vagas limitadas!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
         teacherIds: [6],
@@ -68,11 +68,11 @@ const workshops = [
         title: 'Cerâmica - Xícara e Bowl com Vinho',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/cer/xic.jpeg',
         description: 'Aprenda cerâmica de forma prática e divertida.',
-        details: 'Oficina para iniciantes que querem viver a experiência da cerâmica. Iremos aprender a modelar as peças pela técnica de abertura de placas e pinch alémn de  explorar diversas possibilidades na criação e personalização. Faremos a festa usando carimbos e cortadores.',
-        additionalInfo: 'Oportunidade imperdível! Materiais inclusos. Vagas limitadas!',
+        details: 'Oficina para adultos iniciantes que querem viver a experiência da cerâmica. Iremos aprender a modelar as peças pela técnica de abertura de placas e pinch além de  explorar diversas possibilidades na criação e personalização. Faremos a festa usando carimbos e cortadores.',
+        additionalInfo: 'Oportunidade única! Materiais inclusos. Vagas limitadas!',
         whatsappMessage: 'Olá! Gostaria de informações sobre a Oficina de Pintura em Aquarela',
         teacherIds: [6],
-        price: '$250',
+        price: '$270',
         dateTime: '15 Jan - 14h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
     },
@@ -91,15 +91,14 @@ const workshops = [
         instagramLink: 'https://instagram.com/cotelier.oficial'
     },
     {
-        title: 'Workshop de Desenho Realista',
+        title: 'Workshop de Caricaturas',
         image: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b',
         description: 'Desenvolva suas habilidades de desenho realista com técnicas profissionais.',
         details: 'Aprenda a criar desenhos realistas impressionantes através de técnicas de sombreamento, proporção e detalhamento.',
         additionalInfo: 'Ideal para iniciantes e intermediários que desejam aprimorar suas técnicas.',
-        whatsappMessage: 'Olá! Gostaria de informações sobre o Workshop de Desenho Realista',
-        teacherIds: [5],
+        whatsappMessage: 'Olá! Gostaria de informações sobre o Workshop de Caricaturas',
         price: '$100',
-        dateTime: '15/01 - 14h',
+        dateTime: '15 Jan - 14h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
     }
 ];
@@ -146,7 +145,7 @@ const teachers = {
     5: {
         name: 'Alessa Souza',
         role: 'Desenhista, Ilustradora, e professora',
-        bio: 'Alessa Souza cria ilustrações delicadas e cheias de poesia, trazendo leveza e sensibilidade para cada traço. Como ilustradora e professora, busca inspirar seus alunos a encontrarem beleza nos pequenos detalhes do cotidiano.',
+        bio: 'Há 10 anos Alessa Souza cria ilustrações delicadas e cheias de poesia, trazendo leveza e sensibilidade para cada traço. Busca inspirar criatividade através de sua abordagem lúdica e descontraída.',
         fullBio: 'Alessa Souza é desenhista, ilustradora e professora, dedicada a cultivar a criatividade por meio de desenhos suaves e expressivos. Sua trajetória é marcada pela busca por inspiração em momentos simples e na natureza, transmitindo emoções e sonhos através de suas obras. Alessa conduz suas aulas de modo gentil, incentivando cada aluno a desenvolver sua própria voz artística, com olhar atento à harmonia e à sutileza das cores e formas. As ilustrações que cria são reconhecidas por despertar sensações de aconchego, imaginação e encantamento em quem as aprecia.',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/alessa.jpeg',
         instagram: 'https://instagram.com/ilustracaricaturas_',
@@ -155,7 +154,7 @@ const teachers = {
     6: {
         name: 'Luciana Kotaka',
         role: 'Ceramista e Psicóloga',
-        bio: 'Luciana Kotaka é ceramista e psicóloga, unindo as duas áreas em um trabalho que visa produzir peças que revelam nossa essência. A cerâmica possibilita um trabalho interno intenso, pois o processo entre a criação e a finalização das peças nos leva a confrontar aspectos como o tempo, o perfeccionismo, o estado de presença e a frustração. Um trabalho artístico e emocional.',
+        bio: 'Luciana Kotaka é ceramista e psicóloga, unindo as duas áreas em um trabalho que visa produzir peças que revelam nossa essência. A cerâmica possibilita um trabalho interno intenso...',
         fullBio:'Luciana Kotaka é ceramista e psicóloga, unindo as duas áreas em um trabalho que visa produzir peças que revelam nossa essência. A cerâmica possibilita um trabalho interno intenso, pois o processo entre a criação e a finalização das peças nos leva a confrontar aspectos como o tempo, o perfeccionismo, o estado de presença e a frustração. Um trabalho artístico e emocional.',
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/luciana.jpeg',
         instagram: 'https://instagram.com/lu.ceramicando',
@@ -496,21 +495,9 @@ onUnmounted(() => {
             </div>
         </div>
         <!-- WhatsApp Button (outside dialog) -->
-        <div class="mb-4 flex justify-center items-center relative">
-            <!-- Floating Arrow Indicator Left -->
-            <div class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-[calc(50%+8rem)] z-10 arrow-indicator">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-            </div>
-            <!-- Floating Arrow Indicator Right -->
-            <div class="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-[calc(50%+8rem)] z-10 arrow-indicator-right">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
-                </svg>
-            </div>
-            <a :href="`https://wa.me/554130492413?text=${encodeURIComponent(workshops[currentWorkshopIndex].whatsappMessage)}`" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-6 py-4 rounded-lg flex items-center justify-center text-sm w-fit relative glow-btn">
-                <svg class="w-5 h-5 mr-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <div class="mb-4 flex justify-center items-center">
+            <a :href="`https://wa.me/554130492413?text=${encodeURIComponent(workshops[currentWorkshopIndex].whatsappMessage)}`" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-14 py-5 rounded-full flex items-center justify-center text-base md:text-lg w-fit relative glow-btn">
+                <svg class="w-6 h-6 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                 </svg>
                 <span class="truncate">Informações</span>
@@ -782,7 +769,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Terças-feiras das <b><u>14:00 às 15:30h</u></b> e <b><u>16:00 às 17:30h</u></b>- Faixa etária: a partir de 7 anos</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Segundas-feiras das <b><u>14:00 às 16h</u></b> e <b><u>18:30 às 20h</u></b>- Faixa etária: a partir de 7 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
@@ -808,7 +795,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Terças-feiras das <b><u>14:00 às 15:30h</u></b> e <b><u>16:00 às 17:30h</u></b>- Faixa etária: a partir de 7 anos</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Terças-feiras das <b><u>14h às 15:30h</u></b> e <b><u>16h às 17:30h</u></b>- Faixa etária: a partir de 7 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
@@ -832,7 +819,7 @@ onUnmounted(() => {
                             <span class="text-blue-500 text-sm font-medium">Disponível</span>
                         </div>
                     </div>
-                    <p class="font-lora text-xl text-stone-600 mb-4">Quartas-feiras das <b><u>8:00 às 09:30h</u></b>  - Faixa Etária: A partir de 12 anos</p>
+                    <p class="font-lora text-xl text-stone-600 mb-4">Quartas-feiras das <b><u>8h às 09:30h</u></b>  - Faixa Etária: A partir de 12 anos</p>
                     <p class="font-lora text-lg text-stone-500 mb-4">Perfeito para quem está começando sua jornada artística. Aprenda técnicas fundamentais de desenho e pintura, luz e sombra, proporção, teoria das cores e mais.</p>
                     <div class="flex gap-4">
                         <a href="https://wa.me/554130492413?text=Olá! Gostaria de informações sobre o curso de Pintura a Óleo para iniciantes" target="_blank" class="bg-green-500/80 hover:bg-green-600/80 text-white px-4 py-2 rounded-lg flex items-center justify-center text-sm w-fit">
