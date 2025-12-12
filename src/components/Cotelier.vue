@@ -96,7 +96,7 @@ const workshops = [
     },
     {
         title: 'Workshop de Caricaturas',
-        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/car/car1.jpeg',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/car/car1.jpg',
         description: 'Desperte seu talento e aprimore suas habilidades no universo das caricaturas com técnicas práticas e acessíveis.',
         details: 'Aprenda a transformar fotos ou artistas de referência em caricaturas marcantes, explorando formas, exagero, linhas, esboço e finalização. Durante o workshop, você entenderá como destacar traços, criar expressões divertidas e desenvolver seu próprio estilo artístico.',
         additionalInfo: 'Ideal para iniciantes e intermediários que desejam evoluir no desenho e descobrir novas possibilidades dentro da ilustração.',
@@ -110,7 +110,7 @@ const workshops = [
     {
 
         title: 'Workshop de Crochê',
-        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/cro/cro.jpeg',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/cro/cro.jpg',
         description: 'Descubra o universo do crochê e desenvolva suas habilidades manuais com técnicas acessíveis e criativas.',
         details: 'Aprenda pontos básicos, utilização de agulhas, combinação de linhas e criação de peças simples e personalizadas. Durante o workshop, você terá acompanhamento direto para construir seus primeiros projetos e dominar o famoso braço do crochê.',
         additionalInfo: 'Ideal para iniciantes que desejam mergulhar no artesanato e explorar uma atividade relaxante, divertida e cheia de possibilidades.',
