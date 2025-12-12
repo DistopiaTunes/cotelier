@@ -106,6 +106,21 @@ const workshops = [
         price: 'R$120',
         dateTime: '28 Jan - 9h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
+    },
+    {
+
+        title: 'Workshop de Crochê',
+        image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/eventos/cro/cro.jpeg',
+        description: 'Descubra o universo do crochê e desenvolva suas habilidades manuais com técnicas acessíveis e criativas.',
+        details: 'Aprenda pontos básicos, utilização de agulhas, combinação de linhas e criação de peças simples e personalizadas. Durante o workshop, você terá acompanhamento direto para construir seus primeiros projetos e dominar o famoso braço do crochê.',
+        additionalInfo: 'Ideal para iniciantes que desejam mergulhar no artesanato e explorar uma atividade relaxante, divertida e cheia de possibilidades.',
+        whatsappMessage: 'Olá! Gostaria de informações sobre o Workshop de Crochê',
+        // teacherIds: [4],
+        duration: '2,5h',
+        price: 'R$120',
+        dateTime: '28 Jan - 9h',
+        instagramLink: 'https://instagram.com/cotelier.oficial'
+    
     }
 ];
 
