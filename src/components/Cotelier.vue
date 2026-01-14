@@ -47,7 +47,7 @@ const workshops = [
         teacherIds: [3], // Mônica Lara
         duration: '48h',
         price: '2x R$380',
-        dateTime: '8 Jan - 14h'
+        dateTime: '29 Jan - 14h'
         // instagramLink: 'https://instagram.com/cotelier.oficial'
     },
 
@@ -62,7 +62,7 @@ const workshops = [
         teacherIds: [6],
         duration: '2,5h',
         price: 'R$250',
-        dateTime: '16 Jan - 9h',
+        dateTime: '30 Jan - 9h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
     },
 
@@ -76,7 +76,7 @@ const workshops = [
         teacherIds: [6],
         duration: '2,5h',
         price: 'R$270',
-        dateTime: '16 Jan - 19h',
+        dateTime: '30 Jan - 19h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
     },
 
@@ -91,7 +91,7 @@ const workshops = [
         teacherIds: [5],
         duration: '6h',
         price: 'R$280',
-        dateTime: '6 Jan - 9h ou 14h',
+        dateTime: '19 a 23 Jan - 9h ou 14h',
         instagramLink: 'https://instagram.com/cotelier.oficial'
     },
     {
