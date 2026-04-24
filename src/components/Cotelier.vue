@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted, nextTick } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const currentSlide = ref(0);
 let slider = null;
@@ -583,7 +584,7 @@ onUnmounted(() => {
         <div class="bg-white/90 backdrop-blur-sm shadow-md">
             <div class="max-w-6xl mx-auto px-4 py-4">
                 <div class="flex items-center justify-between">
-                    <a href="#" class="font-lora text-2xl text-stone-800">Cotelier</a>
+                    <RouterLink to="/" class="font-lora text-2xl text-stone-800">Cotelier</RouterLink>
                     
                     <!-- Desktop Menu -->
                     <div class="hidden md:flex space-x-8">

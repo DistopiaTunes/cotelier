@@ -1,9 +1,9 @@
 <script setup>
-import Cotelier from './components/Cotelier.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <Cotelier />
+  <RouterView />
 </template>
 
 <style>
