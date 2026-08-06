@@ -202,7 +202,7 @@ const teachers = {
    
         image: 'https://raw.githubusercontent.com/DistopiaTunes/cotelier/refs/heads/main/src/assets/img/profs/diego.jpeg',
         instagram: 'https://instagram.com/nascimento_da_arte',
-        instagramLabel: ''
+        instagramLabel: '@nascimento_da_arte'
     }
 };
 
